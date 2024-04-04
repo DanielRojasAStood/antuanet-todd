@@ -1,11 +1,8 @@
 # webpack-ish
 node_modules/
-build/
 v8-compile-cache-0/
 
 # webpack build directories
-js/build
-css/build
 
 # General Ignore
 .DS_Store
