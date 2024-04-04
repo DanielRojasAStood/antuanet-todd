@@ -2,6 +2,21 @@
 
 <body>
   <main>
+
+  <section class="section-1">
+    <img class="section-1__img-top" src="<?php echo IMG_BASE . 'marco-home-1.png' ?>" alt="">
+    <img class="section-1__bckg" src="<?php echo IMG_BASE . 'background-one-blue-4.png' ?>" alt="">
+    <div class="section-1__copy">
+      <div class="m-b13">
+        <img src="<?php echo IMG_BASE . 'text-antuanet-todd.svg' ?>" alt="">
+      </div>
+      <p class="title-38">March 7-8th, 2025</p>
+      <p class="title-20">Cartagena de Indias, Colombia</p>
+    </div>
+    <img class="section-1__img-bottom" src="<?php echo IMG_BASE . 'separador-one.webp' ?>" alt="">
+  </section>
+
+  <div style="height: 1000px"></div>
   
     <!-- Modals -->
     <!-- <section class="modal" style="display: none" data-modal="modal-1">

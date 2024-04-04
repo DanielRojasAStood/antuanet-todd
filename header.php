@@ -37,24 +37,24 @@
 <!-- Header -->
 <header class="header" data-header>
   <a href="/" class="header__menu-mobile">
-    <img src="" class="header__logo" alt="" id="logo-mobile" />
+    <img src="<?php echo IMG_BASE . 'logo.svg' ?>" class="header__logo" alt="" id="" />
   </a>
   <nav>
     <ul class="header__menu">
-      <li><a class="header__link" href="#wedding">WEDDING</a></li>
-      <li><a class="header__link" href="#events">EVENTS</a></li>
+      <li><a class="header__link" href="#wedding">OUR WEDDING</a></li>
+      <li><a class="header__link" href="#cartagena">CARTAGENA</a></li>
       <li>
         <a href="#">
-          <img src="" class="header__logo" alt="" id="logo" />
+          <img src="<?php echo IMG_BASE . 'logo.svg' ?>" class="header__logo" alt="" id="" />
         </a>
       </li>
-      <li><a class="header__link" href="#cartagena">CARTAGENA</a></li>
+      <li><a class="header__link" href="#places">PLACES OF INTEREST</a></li>
       <li><a class="header__link" href="#rsvp">R.S.V.P.</a></li>
     </ul>
   </nav>
   <button type="button" class="header__button" data-toggle-menu>
-    <img class="icon-menu" src="" id="icon-menu" alt="" />
-    <img class="icon-close" src="" id="icon-close" alt="" />
+    <img class="icon-menu" src="<?php echo IMG_BASE . 'icon-menu.svg' ?>" id="icon-menu" alt="" />
+    <img class="icon-close" src="<?php echo IMG_BASE . 'icon-close.svg' ?>" id="icon-close" alt="" />
   </button>
 </header>
 <!-- Fin Header -->
@@ -63,14 +63,14 @@
 <section class="menu-mobile" data-menu-mobile>
   <nav>
     <ul>
-      <li><a class="header__link" href="#wedding" data-link>WEDDING</a></li>
-      <li><a class="header__link" href="#events" data-link>EVENTS</a></li>
+      <li><a class="header__link" href="#wedding" data-link>OUR WEDDING</a></li>
+      <li><a class="header__link" href="#cartagena" data-link>CARTAGENA</a></li>
       <li>
         <a href="#">
-          <img src="" class="header__logo" alt="" id="logo-mobile-menu" />
+          <img src="<?php echo IMG_BASE . 'logo.svg' ?>" class="header__logo" alt="" id="" />
         </a>
       </li>
-      <li><a class="header__link" href="#cartagena" data-link>CARTAGENA</a></li>
+      <li><a class="header__link" href="#places" data-link>PLACES OF INTEREST</a></li>
       <li><a class="header__link" href="#rsvp" data-link>R.S.V.P.</a></li>
     </ul>
   </nav>

@@ -10,9 +10,7 @@
  */
 
 define('URL_BASE', get_stylesheet_directory_uri() . '/');
-define('IMG_BASE', URL_BASE . 'assets/images/');
-define('CSS_BASE', URL_BASE . 'assets/css/');
-define('JS_BASE', URL_BASE . 'assets/js/');
+define('IMG_BASE', URL_BASE . 'img/');
 
 // register webpack compiled js and css with theme
 function enqueue_webpack_scripts() {
