@@ -148,8 +148,20 @@ body {
 
 /* Spaces */
 .m {
+  &-b40 {
+    margin-bottom: 40px;
+  }
+
+  &-b20 {
+    margin-bottom: 20px;
+  }
+
   &-b13 {
     margin-bottom: 13px;
+  }
+
+  &-b8 {
+    margin-bottom: 8px;
   }
 }
 
@@ -159,10 +171,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: max-content;
-  padding: 0 37px;
+  min-width: 230px;
+  padding: 0 30px;
   height: 60px;
-  font-size: var(--18);
+  font-size: var(--14);
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.4px;
@@ -172,7 +184,8 @@ body {
   cursor: pointer;
 
   @media only screen and (min-width: 1024px) {
-    font-size: var(--14);
+    font-size: var(--18);
+    letter-spacing: 3.6px;
   }
 
   &--transparent {
@@ -196,14 +209,69 @@ body {
 .title {
   &-38 {
     color: var(--333);
-    font-size: var(--26);
+    font-size: var(--24);
     font-style: normal;
     font-weight: 500;
     letter-spacing: 3.8px;
-    
+
     @media only screen and (min-width: 1024px) {
       font-size: var(--38);
       line-height: 40px;
+    }
+  }
+
+  &-32 {
+    color: var(--000);
+    font-size: var(--24);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 3px;
+
+    @media only screen and (min-width: 1024px) {
+      font-size: var(--32);
+      line-height: 70px;
+      letter-spacing: 12.8px;
+    }
+  }
+
+  &-30 {
+    color: var(--000);
+    font-size: var(--22);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 3px;
+
+    @media only screen and (min-width: 1024px) {
+      font-size: var(--30);
+      line-height: 70px;
+    }
+  }
+
+  &-24 {
+    color: var(--000);
+    font-size: var(--20);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 19.2px;
+
+    @media only screen and (min-width: 1024px) {
+      font-size: var(--24);
+    }
+  }
+
+  &-26 {
+    color: var(--000);
+    font-size: var(--20);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 13px;
+
+    @media only screen and (min-width: 1024px) {
+      font-size: var(--26);
     }
   }
 
@@ -214,12 +282,28 @@ body {
     font-style: normal;
     font-weight: 500;
     letter-spacing: 2px;
-    
+
     @media only screen and (min-width: 1024px) {
       font-size: var(--20);
       line-height: 70px;
     }
   }
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  row-gap: 10px;
+
+  @media only screen and (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
+}
+
+/* Align */
+.text-center {
+  text-align: center;
 }
 
 /* Header */
@@ -437,7 +521,112 @@ body {
       &-bottom {
         position: relative;
         width: 100%;
+        margin-top: -11px;
+        z-index: 1;
+      }
+    }
+  }
+
+  &-2 {
+    position: relative;
+    height: 700px;
+
+    @media only screen and (min-width: 1024px) {
+      height: 890px;
+    }
+
+    &__bckg {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+
+    &__copy {
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      padding: 0 20px;
+      text-align: center;
+      transform: translate(-50%, 0);
+
+      @media only screen and (min-width: 1024px) {
+        top: 130px;
+        left: 10%;
+        max-width: 500px;
+        padding: 0;
+        transform: translate(0, 0);
+      }
+
+      img {
+        width: 100%;
+        max-width: 350px;
+        @media only screen and (min-width: 1024px) {
+          max-width: max-content;
+        }
+      }
+    }
+
+    &__img {
+      &-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        aspect-ratio: 1 / 1;
+      }
+
+      &-bottom {
+        position: relative;
+        width: 100%;
         margin-top: -50px;
+      }
+    }
+
+    &__cta {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &-reverse {
+    height: 580px;
+
+    @media only screen and (min-width: 1024px) {
+      height: 890px;
+    }
+
+    .section {
+      &-2 {
+        &__copy {
+          left: inherit;
+          transform: translate(0);
+          
+          @media only screen and (min-width: 1024px) {
+            top: 250px;
+            right: 10%;
+          }
+        }
+
+        &__bckg {
+          object-position: top;
+        }
+
+        &__cta {
+          display: grid;
+          justify-content: normal;
+
+          @media only screen and (min-width: 1024px) {
+            display: flex;
+            justify-content: center;
+          }
+        }
       }
     }
   }
