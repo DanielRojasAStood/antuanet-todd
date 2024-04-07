@@ -126,37 +126,37 @@
       <div>
         <p class="title-26 text-center m-b80">SITIOS DE INTERÉS</p>
         <div class="section-6__items">
-          <a href="/cartagena#hoteles" class="section-6__item">
+          <a href="/index.php/cartagena#hoteles" class="section-6__item">
             HOTELS
             <img src="<?php echo IMG_BASE . 'icon-hotels.svg' ?>" alt="">
           </a>
         </div>
         <div class="section-6__items">
-          <a href="/cartagena#restaurantes" class="section-6__item">
+          <a href="/index.php/cartagena#restaurantes" class="section-6__item">
             RESTAURANTS
             <img src="<?php echo IMG_BASE . 'icon-restaurants.svg' ?>" alt="">
           </a>
         </div>
         <div class="section-6__items">
-          <a href="/cartagena#brunch" class="section-6__item">
+          <a href="/index.php/cartagena#brunch" class="section-6__item">
             BRUNCH & DESSERTS
             <img src="<?php echo IMG_BASE . 'icon-brunch desserts.svg' ?>" alt="">
           </a>
         </div>
         <div class="section-6__items">
-          <a href="/cartagena#bares" class="section-6__item">
+          <a href="/index.php/cartagena#bares" class="section-6__item">
             BARS
             <img src="<?php echo IMG_BASE . 'icon-bars.svg' ?>" alt="">
           </a>
         </div>
         <div class="section-6__items">
-          <a href="/cartagena#boutique" class="section-6__item">
+          <a href="/index.php/cartagena#boutique" class="section-6__item">
             BOUTIQUES
             <img src="<?php echo IMG_BASE . 'icon-boutique.svg' ?>" alt="">
           </a>
         </div>
         <div class="section-6__items">
-          <a href="/cartagena#peluquerias" class="section-6__item">
+          <a href="/index.php/cartagena#peluquerias" class="section-6__item">
             BEAUTY SALONS
             <img src="<?php echo IMG_BASE . 'icon-beauty-salon.svg' ?>" alt="">
           </a>
