@@ -4,7 +4,7 @@
   <main>
 
   <section class="section-1">
-    <img class="section-1__img-top" src="<?php echo IMG_BASE . 'marco-home-1.png' ?>" alt="">
+    <img class="section-1__img-top" src="<?php echo IMG_BASE . 'marco-home-1.png' ?>" alt="home">
     <img class="section-1__bckg" src="<?php echo IMG_BASE . 'background-one-blue-4.png' ?>" alt="">
     <div class="section-1__copy">
       <div class="m-b13">
