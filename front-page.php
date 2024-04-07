@@ -52,8 +52,120 @@
     <img class="section-2__bckg" src="<?php echo IMG_BASE . 'bg-three.webp' ?>" alt="">
   </section>
 
-  <section>
+  <section class="section section-3">
+    <div class="section-3__bckg">
+      <img src="<?php echo IMG_BASE . 'bg-four.webp' ?>" alt="">
+    </div>
+
+    <div class="section-3__slick">
+      <div class="slick0">
+        <div class="slick-item">
+          <div class="slick-item__bckg">
+            <img src="<?php echo IMG_BASE . 'foto-novios-one.webp' ?>" alt="">
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="slick-item__bckg">
+            <img src="<?php echo IMG_BASE . 'foto-novios-two.webp' ?>" alt="">
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="slick-item__bckg">
+            <img src="<?php echo IMG_BASE . 'foto-novios-three.webp' ?>" alt="">
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="slick-item__bckg">
+            <img src="<?php echo IMG_BASE . 'foto-novios-one.webp' ?>" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-3__copy">
+      <p class="title-36 m-b40">CELEBRATE WITH US!</p>
+      <div class="section-3__countdown" id="countdown-timer"></div>
+    </div>
   </section>
+
+  <section class="section section-4">
+    <div class="section-4__bckg">
+      <img src="<?php echo IMG_BASE . 'bg-five.webp' ?>" alt="">
+    </div>
+    <img class="section-1__img-bottom" src="<?php echo IMG_BASE . 'separador-one.webp' ?>" alt="">
+  </section>
+
+  <section class="section section-5">
+    <div class="section-5__bckg">
+      <img src="<?php echo IMG_BASE . 'bg-six.webp' ?>" alt="">
+    </div>
+    <div class="section-5__wrapper">
+      <div class="text-center m-b40">
+        <img src="<?php echo IMG_BASE . 'text-cartagena-indias.svg' ?>" alt="">
+      </div>
+      <div class="section-5__copy">
+        <p class="title-20 m-b20">
+          We were very excited to have our wedding in Cartagena. A city full of magic, charm, history and tradition, which is characterized by its great wall, cobblestone streets and beautiful colonial houses. Cartagena is a UNESCO World Heritage Site and is considered one of the greatest cultural treasures of Latin America.
+        </p>
+        <p class="title-20">
+          We would like to make some recommendations, so that you can enjoy your stay in this wonderful place to the fullest. The best way to experience Cartagena is to walk and explore its labyrinths of narrow streets and lush squares. Ideally, you should stay in the historic district, so that you can be within walking distance of places of interest and experience live music, excellent gastronomy and popular art.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-6">
+    <img class="section-6__bckg" src="<?php echo IMG_BASE . 'bg-seven.webp' ?>" alt="">
+
+    <div class="section-6__copy">
+      <div class="section-6__copy-img">
+        <div class="text-center">
+          <img src="<?php echo IMG_BASE . 'places-of-interest.svg' ?>" alt="">
+        </div>
+      </div>
+      <div>
+        <p class="title-26 text-center m-b80">SITIOS DE INTERÉS</p>
+        <div class="section-6__items">
+          <a href="" class="section-6__item">
+            HOTELS
+            <img src="<?php echo IMG_BASE . 'icon-hotels.svg' ?>" alt="">
+          </a>
+        </div>
+        <div class="section-6__items">
+          <a href="" class="section-6__item">
+            RESTAURANTS
+            <img src="<?php echo IMG_BASE . 'icon-restaurants.svg' ?>" alt="">
+          </a>
+        </div>
+        <div class="section-6__items">
+          <a href="" class="section-6__item">
+            BRUNCH & DESSERTS
+            <img src="<?php echo IMG_BASE . 'icon-brunch desserts.svg' ?>" alt="">
+          </a>
+        </div>
+        <div class="section-6__items">
+          <a href="" class="section-6__item">
+            BARS
+            <img src="<?php echo IMG_BASE . 'icon-bars.svg' ?>" alt="">
+          </a>
+        </div>
+        <div class="section-6__items">
+          <a href="" class="section-6__item">
+            BOUTIQUES
+            <img src="<?php echo IMG_BASE . 'icon-boutique.svg' ?>" alt="">
+          </a>
+        </div>
+        <div class="section-6__items">
+          <a href="" class="section-6__item">
+            BEAUTY SALONS
+            <img src="<?php echo IMG_BASE . 'icon-beauty-salon.svg' ?>" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
 
   
     <!-- Modals -->

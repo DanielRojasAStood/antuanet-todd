@@ -7,12 +7,7 @@ export function initSlickCarousels() {
   /* Slicks */
   $(".slick0").slick({
     dots: false,
-    infinite: true,
-    speed: 500,
     slidesToShow: 3,
-    adaptiveHeight: true,
-    autoplay: true,
-    autoplaySpeed: 200000,
     navigation: {
       nextEl: ".swiper-button-next-0",
       prevEl: ".swiper-button-prev-0",
@@ -22,12 +17,14 @@ export function initSlickCarousels() {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 680,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
