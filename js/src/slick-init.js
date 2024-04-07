@@ -37,10 +37,10 @@ export function initSlickCarousels() {
     slidesToShow: 3,
     adaptiveHeight: true,
     autoplay: true,
-    autoplaySpeed: 200000,
+    autoplaySpeed: 30000000,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next-1",
+      prevEl: ".swiper-button-prev-1",
     },
     responsive: [
       {
@@ -58,144 +58,40 @@ export function initSlickCarousels() {
     ],
   });
 
-  $(".slick2").slick({
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    adaptiveHeight: true,
-    autoplay: true,
-    autoplaySpeed: 2000000,
-    navigation: {
-      nextEl: ".swiper-button-next-2",
-      prevEl: ".swiper-button-prev-2",
-    },
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 680,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
+  function initSlick() {
+    $(".slick-slider").each(function () {
+      var $slickElement = $(this);
+      var slickOptions = {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: false,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+            },
+          },
+        ],
+      };
 
-  $(".slick3").slick({
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    adaptiveHeight: true,
-    autoplay: true,
-    autoplaySpeed: 2000000,
-    navigation: {
-      nextEl: ".swiper-button-next-3",
-      prevEl: ".swiper-button-prev-3",
-    },
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 680,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
+      if ($(window).width() < 1024) {
+        if (!$slickElement.hasClass("slick-initialized")) {
+          $slickElement.slick(slickOptions);
+        }
+      } else {
+        if ($slickElement.hasClass("slick-initialized")) {
+          $slickElement.slick("unslick");
+        }
+      }
+    });
+  }
 
-  $(".slick4").slick({
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    adaptiveHeight: true,
-    autoplay: true,
-    autoplaySpeed: 2000000,
-    navigation: {
-      nextEl: ".swiper-button-next-4",
-      prevEl: ".swiper-button-prev-4",
-    },
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 680,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-
-  $(".slick5").slick({
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    adaptiveHeight: true,
-    autoplay: true,
-    autoplaySpeed: 2000000,
-    navigation: {
-      nextEl: ".swiper-button-next-5",
-      prevEl: ".swiper-button-prev-5",
-    },
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 680,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-
-  $(".slick6").slick({
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    adaptiveHeight: true,
-    autoplay: true,
-    autoplaySpeed: 2000000,
-
-    navigation: {
-      nextEl: ".swiper-button-next-6",
-      prevEl: ".swiper-button-prev-6",
-    },
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 680,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
+  $(window).on("load resize", initSlick);
 }

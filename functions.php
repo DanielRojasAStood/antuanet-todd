@@ -25,3 +25,8 @@ function enqueue_webpack_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'enqueue_webpack_scripts' );
+
+function my_wpcf7_form_elements( $html ) {
+    return preg_replace('/<br\s*\/?>/i', '', $html);
+}
+add_filter('wpcf7_form_elements', 'my_wpcf7_form_elements');
