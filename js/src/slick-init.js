@@ -59,12 +59,12 @@ export function initSlickCarousels() {
   });
 
   function initSlick() {
-    $(".slick-slider").each(function () {
+    $(".slick-events").each(function () {
       var $slickElement = $(this);
       var slickOptions = {
         slidesToShow: 3,
         slidesToScroll: 3,
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         fade: false,
@@ -75,7 +75,11 @@ export function initSlickCarousels() {
               slidesToShow: 1,
               slidesToScroll: 1,
               infinite: true,
-              dots: true,
+              dots: false,
+              navigation: {
+                nextEl: ".swiper-button-next-2",
+                prevEl: ".swiper-button-prev-2",
+              },
             },
           },
         ],

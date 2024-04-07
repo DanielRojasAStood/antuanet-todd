@@ -44,7 +44,7 @@
       <li><a class="header__link" href="#wedding">OUR WEDDING</a></li>
       <li><a class="header__link" href="#cartagena">CARTAGENA</a></li>
       <li>
-        <a href="#">
+        <a href="/">
           <img src="<?php echo IMG_BASE . 'logo.svg' ?>" class="header__logo" alt="" id="" />
         </a>
       </li>
@@ -66,7 +66,7 @@
       <li><a class="header__link" href="#wedding" data-link>OUR WEDDING</a></li>
       <li><a class="header__link" href="#cartagena" data-link>CARTAGENA</a></li>
       <li>
-        <a href="#">
+        <a href="/">
           <img src="<?php echo IMG_BASE . 'logo.svg' ?>" class="header__logo" alt="" id="" />
         </a>
       </li>

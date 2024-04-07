@@ -15,10 +15,10 @@
             </div>
             <p class="title-26 text-center m-b80">SITIOS DE INTERÉS</p>
             <div class="text-center" id="hoteles">
-                <h2 class="title title-28 uppercase">Hoteles<img src="<?php echo IMG_BASE . 'icon-hotels.svg' ?>" alt=""></h2>
+                <h2 class="title title-28 uppercase">Hotels<img src="<?php echo IMG_BASE . 'icon-hotels.svg' ?>" alt=""></h2>
             </div>
             <div class="section-grid__line">
-                <div class="section-grid gap-80 slick-slider">
+                <div class="section-grid gap-80 slick-slider slick-events">
                 <div class="section-grid__item no-gap">
                     <h3 class="title-18 color-gray m-b8">
                     MOVICH <br />
@@ -231,10 +231,10 @@
             </div>
             <div class="section section-9"></div>
             <div class="text-center" id="restaurantes">
-                <h2 class="title title-28 uppercase">Restaurantes <img src="<?php echo IMG_BASE . 'icon-restaurants.svg' ?>" alt=""></h2>
+                <h2 class="title title-28 uppercase">Restaurants <img src="<?php echo IMG_BASE . 'icon-restaurants.svg' ?>" alt=""></h2>
             </div>
             <div class="section-grid__line">
-                <div class="section-grid gap-80 slick-slider">
+                <div class="section-grid gap-80 slick-slider slick-events">
                 <div class="section-grid__item no-gap">
                     <h3 class="title-18 color-gray m-b8">
                     DONDE <br />
@@ -387,7 +387,7 @@
                 <h2 class="title title-28 uppercase">Brunch & Desserts<img src="<?php echo IMG_BASE . 'icon-brunch desserts.svg' ?>" alt=""></h2>
             </div>
             <div class="section-grid__line">
-                <div class="section-grid gap-80 slick-slider">
+                <div class="section-grid gap-80 slick-slider slick-events">
                 <div class="section-grid__item no-gap">
                     <h3 class="title-18 color-gray m-b8">
                     ÉPOCA <br />
@@ -456,10 +456,10 @@
             </div>
             <div class="section section-9"></div>
             <div class="text-center" id="bares">
-                <h2 class="title title-28 uppercase">Bares<img src="<?php echo IMG_BASE . 'icon-bars.svg' ?>" alt=""></h2>
+                <h2 class="title title-28 uppercase">Bars<img src="<?php echo IMG_BASE . 'icon-bars.svg' ?>" alt=""></h2>
             </div>
             <div class="section-grid__line">
-                <div class="section-grid gap-80 slick-slider">
+                <div class="section-grid gap-80 slick-slider slick-events">
                 <div class="section-grid__item no-gap">
                     <h3 class="title-18 color-gray m-b8">
                     ALQUÍMICO <br />
@@ -569,11 +569,155 @@
                 </div>
             </div>
             <div class="section section-9"></div>
-            <div class="text-center" id="peluquerias">
-                <h2 class="title title-28 uppercase">Peluquerías<img src="<?php echo IMG_BASE . 'icon-boutique.svg' ?>" alt=""></h2>
+            <div class="text-center" id="boutique">
+                <h2 class="title title-28 uppercase">BOUTIQUES<img src="<?php echo IMG_BASE . 'icon-boutique.svg' ?>" alt=""></h2>
             </div>
             <div class="section-grid__line">
-                <div class="section-grid gap-80 slick-slider">
+                <div class="section-grid gap-80 slick-slider slick-events">
+                <div class="section-grid__item no-gap">
+                    <h3 class="title-18 color-gray m-b8">
+                    C.C. LA SERREZUELA
+                    </h3>
+                    <p class="title-13">Cra. 11 # 39 - 21</p>
+                    <p class="title-13">Cartagena, Colombia</p>
+                    <p class="number title-16 m-b13">+57 (605) 6421795</p>
+                    <a
+                    href="https://www.plazalaserrezuela.com/"
+                    class="button button--small"
+                    target="_blank"
+                    >
+                    VIEW
+                    </a>
+                </div>
+                <div class="section-grid__item no-gap">
+                    <h3 class="title-18 color-gray m-b8">
+                    MALVA
+                    </h3>
+                    <p class="title-13">Cra. 11 # 39 - 21</p>
+                    <p class="title-13">Cartagena, Colombia</p>
+                    <p class="number title-16 m-b13">+57 300 3278066</p>
+                    <a
+                    href="https://malvaonline.com/"
+                    class="button button--small"
+                    target="_blank"
+                    >
+                    VIEW
+                    </a>
+                </div>
+                <div class="section-grid__item no-gap">
+                    <h3 class="title-18 color-gray m-b8">
+                    ST. DOM
+                    </h3>
+                    <p class="title-13">Cra. 3 # 33 - 70</p>
+                    <p class="title-13">Centro Histórico, Cartagena</p>
+                    <p class="number title-16 m-b13">+57 (605) 6354380</p>
+                    <a
+                    href="http://www.lurecartagena.com/st-dom/"
+                    class="button button--small"
+                    target="_blank"
+                    >
+                    VIEW
+                    </a>
+                </div>
+                <div class="section-grid__item no-gap">
+                    <h3 class="title-18 color-gray m-b8">
+                    SILVIA TCHERASSI
+                    </h3>
+                    <p class="title-13">Calle 31 # 31 - 11</p>
+                    <p class="title-13">Centro Histórico, Cartagena</p>
+                    <p class="number title-16 m-b13">+57 (605) 6790051</p>
+                    <a
+                    href="https://www.silviatcherassi.com/co/es/tiendas/cartagena"
+                    class="button button--small"
+                    target="_blank"
+                    >
+                    VIEW
+                    </a>
+                </div>
+                <div class="section-grid__item no-gap">
+                    <h3 class="title-18 color-gray m-b8">
+                    FRANCESCA MIRANDA
+                    </h3>
+                    <p class="title-13">Calle 31 # 3 - 25</p>
+                    <p class="title-13">Centro Histórico, Cartagena</p>
+                    <p class="number title-16 m-b13">+57 (605) 6648821</p>
+                    <a
+                    href="https://www.instagram.com/francescamiranda_"
+                    class="button button--small"
+                    target="_blank"
+                    >
+                    VIEW
+                    </a>
+                </div>
+                <div class="section-grid__item no-gap">
+                    <h3 class="title-18 color-gray m-b8">
+                    BEATRIZ CAMACHO
+                    </h3>
+                    <p class="title-13">Calle 33 # 3 - 04</p>
+                    <p class="title-13">Centro Histórico, Cartagena</p>
+                    <p class="number title-16 m-b13">+57 320 5651113</p>
+                    <a href="href="https://beatrizcamacho.com/"" class="button button--small" target="_blank"> VIEW </a>
+                </div>
+                <div class="section-grid__item no-gap">
+                    <h3 class="title-18 color-gray m-b8">
+                    GORETTY MEDINA
+                    </h3>
+                    <p class="title-13">Calle La Mantilla # 3 - 44</p>
+                    <p class="title-13">Centro Histórico, Cartagena</p>
+                    <p class="number title-16 m-b13">+57 317 4368144</p>
+                    <a
+                    href="https://www.instagram.com/gorettymedinac/"
+                    class="button button--small"
+                    target="_blank"
+                    >
+                    VIEW
+                    </a>
+                </div>
+                <div class="section-grid__item no-gap">
+                    <h3 class="title-18 color-gray m-b8">
+                    KETTY TINOCO
+                    </h3>
+                    <p class="title-13">Calle Balocco # 33 - 01</p>
+                    <p class="title-13">Centro Histórico, Cartagena</p>
+                    <p class="number title-16 m-b13">+57 301 6287824</p>
+                    <a href="https://kettytinoco.com/" class="button button--small" target="_blank"> VIEW </a>
+                </div>
+                <div class="section-grid__item no-gap">
+                    <h3 class="title-18 color-gray m-b8">
+                    AZULU
+                    </h3>
+                    <p class="title-13">Cra. 3 # 31 - 11</p>
+                    <p class="title-13">Centro Histórico, Cartagena</p>
+                    <p class="number title-16 m-b13">+57 (605) 6642724</p>
+                    <a href="https://azulu.co/" class="button button--small" target="_blank"> VIEW </a>
+                </div>
+                <div class="section-grid__item no-gap">
+                    <h3 class="title-18 color-gray m-b8">
+                    TO RENT <br>
+                    GABRIEL BOUTIQUE
+                    </h3>
+                    <p class="title-13">Cra. 2 # 9 – 148 L. 5</p>
+                    <p class="title-13">Bocagrande, Cartagena</p>
+                    <p class="number title-16 m-b13">+57 (605) 6658020</p>
+                    <a href="https://www.instagram.com/boutiquegabriel/?hl=en" class="button button--small" target="_blank"> VIEW </a>
+                </div>
+                <div class="section-grid__item no-gap">
+                    <h3 class="title-18 color-gray m-b8">
+                    TO RENT <br>
+                    D’CLASE
+                    </h3>
+                    <p class="title-13">Av. San Martin 5 – 84T L.201</p>
+                    <p class="title-13">Bocagrande, Cartagena</p>
+                    <p class="number title-16 m-b13">+57 300 7889362</p>
+                    <a href="https://www.instagram.com/dclase.co/?hl=en" class="button button--small" target="_blank"> VIEW </a>
+                </div>
+            </div>
+            <div class="section section-9"></div>
+            <div class="text-center" id="peluquerias">
+                <h2 class="title title-28 uppercase">BEAUTY SALONS<img src="<?php echo IMG_BASE . 'icon-beauty-salon.svg' ?>" alt=""></h2>
+            </div>
+            <div class="section-grid__line">
+                <div class="section-grid gap-80 slick-slider slick-events">
                 <div class="section-grid__item no-gap">
                     <h3 class="title-18 color-gray m-b8">
                     FRANKLIN <br />
@@ -695,10 +839,8 @@
         </div>
     </section>
 
-
-
     <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.9102070933877!2d-75.55006448856406!3d10.428699989656767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef62f99208a15a3%3A0x3187872c9d2602d2!2sSofitel%20Legend%20Santa%20Clara%20Cartagena!5e0!3m2!1ses!2sco!4v1682346924399!5m2!1ses!2sco" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.9102070933877!2d-75.55006448856406!3d10.428699989656767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef62f99208a15a3%3A0x3187872c9d2602d2!2sSofitel%20Legend%20Santa%20Clara%20Cartagena!5e0!3m2!1ses!2sco!4v1682346924399!5m2!1ses!2sco" width="100%" height="600" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="map__text">
         <div class="text-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.14 51.153" style="margin: 0 auto; opacity: 1 !important;visibility:visible">

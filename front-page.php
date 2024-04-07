@@ -126,37 +126,37 @@
       <div>
         <p class="title-26 text-center m-b80">SITIOS DE INTERÉS</p>
         <div class="section-6__items">
-          <a href="" class="section-6__item">
+          <a href="/cartagena#hoteles" class="section-6__item">
             HOTELS
             <img src="<?php echo IMG_BASE . 'icon-hotels.svg' ?>" alt="">
           </a>
         </div>
         <div class="section-6__items">
-          <a href="" class="section-6__item">
+          <a href="/cartagena#restaurantes" class="section-6__item">
             RESTAURANTS
             <img src="<?php echo IMG_BASE . 'icon-restaurants.svg' ?>" alt="">
           </a>
         </div>
         <div class="section-6__items">
-          <a href="" class="section-6__item">
+          <a href="/cartagena#brunch" class="section-6__item">
             BRUNCH & DESSERTS
             <img src="<?php echo IMG_BASE . 'icon-brunch desserts.svg' ?>" alt="">
           </a>
         </div>
         <div class="section-6__items">
-          <a href="" class="section-6__item">
+          <a href="/cartagena#bares" class="section-6__item">
             BARS
             <img src="<?php echo IMG_BASE . 'icon-bars.svg' ?>" alt="">
           </a>
         </div>
         <div class="section-6__items">
-          <a href="" class="section-6__item">
+          <a href="/cartagena#boutique" class="section-6__item">
             BOUTIQUES
             <img src="<?php echo IMG_BASE . 'icon-boutique.svg' ?>" alt="">
           </a>
         </div>
         <div class="section-6__items">
-          <a href="" class="section-6__item">
+          <a href="/cartagena#peluquerias" class="section-6__item">
             BEAUTY SALONS
             <img src="<?php echo IMG_BASE . 'icon-beauty-salon.svg' ?>" alt="">
           </a>
@@ -322,7 +322,7 @@
   </section>
 
   <section class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.9102070933877!2d-75.55006448856406!3d10.428699989656767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef62f99208a15a3%3A0x3187872c9d2602d2!2sSofitel%20Legend%20Santa%20Clara%20Cartagena!5e0!3m2!1ses!2sco!4v1682346924399!5m2!1ses!2sco" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.9102070933877!2d-75.55006448856406!3d10.428699989656767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef62f99208a15a3%3A0x3187872c9d2602d2!2sSofitel%20Legend%20Santa%20Clara%20Cartagena!5e0!3m2!1ses!2sco!4v1682346924399!5m2!1ses!2sco" width="100%" height="600" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <div class="map__text">
       <div class="text-center">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.14 51.153" style="margin: 0 auto; opacity: 1 !important;visibility:visible">
