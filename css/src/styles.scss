@@ -182,7 +182,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 230px;
+  width: 230px;
+  margin: 0 auto;
   padding: 0 30px;
   height: 50px;
   font-size: var(--14);
@@ -198,6 +199,7 @@ body {
     height: 60px;
     font-size: var(--18);
     letter-spacing: 3.6px;
+    min-width: 230px;
   }
 
   &--transparent {
@@ -430,7 +432,7 @@ body {
   transform: translateY(10px);
   transition: all 0.4s ease;
   background-color: var(--3060A9);
-  z-index: 5;
+  z-index: 10;
 
   @media only screen and (min-width: 1024px) {
     justify-content: center;
@@ -555,7 +557,7 @@ body {
     background-color: var(--3060A9);
     transform: translate3d(100%, 0, 0);
     transition: all 0.4s ease;
-    z-index: 3;
+    z-index: 9;
 
     &.is-active {
       transform: translate3d(0, 0, 0);
@@ -588,10 +590,26 @@ body {
     }
 
     &__bckg {
+      display: none;
       width: 100%;
       height: 100%;
       aspect-ratio: 1/1;
       object-fit: cover;
+
+      @media only screen and (min-width: 1024px) {
+        display: block;
+      }
+
+      &-two {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+
+        @media only screen and (min-width: 1024px) {
+          display: none;
+        }
+      }
     }
 
     &__copy {
@@ -621,6 +639,7 @@ body {
 
     &__img {
       &-top {
+        display: none;
         position: absolute;
         top: 0;
         left: 0;
@@ -629,6 +648,9 @@ body {
         object-fit: cover;
         object-position: top;
         aspect-ratio: 1 / 1;
+        @media only screen and (min-width: 1024px) {
+          display: block;
+        }
       }
 
       &-bottom {
@@ -642,22 +664,36 @@ body {
 
   &-2 {
     position: relative;
-    height: 700px;
+    height: 1000px;
 
     @media only screen and (min-width: 1024px) {
       height: 890px;
     }
 
     &__bckg {
+      display: none;
       width: 100%;
       height: 100%;
       aspect-ratio: 1/1;
       object-fit: cover;
+      @media only screen and (min-width: 1024px) {
+        display: block;
+      }
+
+      &-two {
+        display: block;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1/1;
+        @media only screen and (min-width: 1024px) {
+          display: none;
+        }
+      }
     }
 
     &__copy {
       position: absolute;
-      top: 100px;
+      top: 60px;
       left: 50%;
       width: 100%;
       max-width: 100%;
@@ -709,7 +745,7 @@ body {
   }
 
   &-reverse {
-    height: 580px;
+    height: 800px;
 
     @media only screen and (min-width: 1024px) {
       height: 890px;
@@ -1896,8 +1932,11 @@ input[type="radio"]:checked + span:before {
 
   .text-center {
     display: flex;
-    justify-content: center;
-    text-align: left !important;
+    justify-content: flex-start;
+
+    @media only screen and (min-width: 980px) {
+      justify-content: center;
+    }
   }
 
   svg {

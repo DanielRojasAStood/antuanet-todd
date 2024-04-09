@@ -6,6 +6,7 @@
   <section class="section-1">
     <img class="section-1__img-top" src="<?php echo IMG_BASE . 'marco-home-1.png' ?>" alt="home">
     <img class="section-1__bckg" src="<?php echo IMG_BASE . 'background-one-blue-4.png' ?>" alt="">
+    <img class="section-1__bckg-two" src="<?php echo IMG_BASE . 'new-home-mobile-update.png' ?>" alt="">
     <div class="section-1__copy">
       <div class="m-b13">
         <img src="<?php echo IMG_BASE . 'text-antuanet-todd.svg' ?>" alt="">
@@ -18,6 +19,7 @@
 
   <section class="section-2" id="wedding">
     <img class="section-2__bckg" src="<?php echo IMG_BASE . 'bg-two.webp' ?>" alt="">
+    <img class="section-2__bckg-two" src="<?php echo IMG_BASE . 'home-mobile-wedding-mobile.png' ?>" alt="">
     <div class="section-2__copy">
       <p class="title-26 m-b8">NUESTRA BODA</p>
       <img class="m-b40" src="<?php echo IMG_BASE . 'text-our-wedding.svg' ?>" alt="">
@@ -50,6 +52,7 @@
       </div>
     </div>
     <img class="section-2__bckg" src="<?php echo IMG_BASE . 'bg-three.webp' ?>" alt="">
+    <img class="section-2__bckg-two" src="<?php echo IMG_BASE . 'home-mobile-phantom-boat-party.png' ?>" alt="">
   </section>
 
   <section class="section section-3">
