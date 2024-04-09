@@ -76,7 +76,12 @@
         </div>
         <div class="slick-item">
           <div class="slick-item__bckg">
-            <img src="<?php echo IMG_BASE . 'foto-novios-one.webp' ?>" alt="">
+            <img src="<?php echo IMG_BASE . 'foto-novios-four.webp' ?>" alt="">
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="slick-item__bckg">
+            <img src="<?php echo IMG_BASE . 'foto-novios-five.webp' ?>" alt="">
           </div>
         </div>
       </div>
@@ -296,6 +301,7 @@
 
   <section class="section section-8" id="rsvp">
     <img class="section-8__bckg" src="<?php echo IMG_BASE . 'bg-nine.webp' ?>" alt="">
+    <img class="section-8__flower" src="<?php echo IMG_BASE . 'flor-five.webp' ?>" alt="">
 
     <div class="section-8__copy">
       <div>
@@ -312,7 +318,7 @@
           <?php echo do_shortcode('[contact-form-7 id="d5e622f" title="Formulario de contacto 1"]')?>
         </div>
 
-        <img class="section-8__flower" src="<?php echo IMG_BASE . 'flor-five.webp' ?>" alt="">
+        
       </div>
     </div>
   </section>
