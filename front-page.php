@@ -33,7 +33,8 @@
       </p>
       <div class="grid">
         <button type="button" class="m-auto button button--transparent" data-open-modal="modal-1" > DRESS CODE </button>
-        <button type="button" class="m-auto button button--transparent" data-open-modal="modal-2" > GIFTS </button>
+        <!-- <button type="button" class="m-auto button button--transparent" data-open-modal="modal-2" > GIFTS </button> -->
+        <a href="https://www.honeyfund.com/site/HoneymoonfunBusler" target="_blank" class="m-auto button button--transparent" > GIFTS </a>
       </div>
     </div>
   </section>
