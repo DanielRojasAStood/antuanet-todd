@@ -390,7 +390,7 @@
             </svg>
           </button>
           <img
-            src="/wp-content/themes/antuanet-todd/img/dresscode-wedding-antuanett-y-todd-2.png"
+            src="/wp-content/themes/antuanet-todd/img/dress-code-boda.png"
             alt=""
             id=""
           />
@@ -417,7 +417,7 @@
             </svg>
           </button>
           <img
-            src="/wp-content/themes/antuanet-todd/img/gift-wedding-antuanett-y-todd-2.png"
+            src="/wp-content/themes/antuanet-todd/img/dress-code-party.png"
             alt=""
             id=""
           />
@@ -444,7 +444,7 @@
             </svg>
           </button>
           <img
-            src="/wp-content/themes/antuanet-todd/img/dresscode-welcome-antuanett-y-todd-2.png"
+            src="/wp-content/themes/antuanet-todd/img/dress-code-party.png"
             alt=""
             id=""
           />
