@@ -45,7 +45,7 @@
       <p class="title-26 m-b8">FIESTA BIENVENIDA</p>
       <img class="m-b40" src="<?php echo IMG_BASE . 'text-phantom-party.svg' ?>" alt="">
       <p class="title-30">March 7th, 2025</p>
-      <p class="title-32 m-b13" style="">5:00 P.M.</p>
+      <p class="title-32 m-b13" style="">4:30 P.M.</p>
       <p class="title-30 m-b40" style="line-height: normal">
       Barco Phantom
       </p>
