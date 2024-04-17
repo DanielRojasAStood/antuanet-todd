@@ -365,7 +365,7 @@
           <br>
           La tarifa a Getsemaní cuesta unos $14.000 cop. A la zona hotelera del centro histórico (Ciudad Amurallada) alrededor de $14.000 cop y a la zona de Bocagrande cuesta $20.000 cop.
           <br> <br>
-          Normalmente $1 USD equivale a $4.400 cop.
+          Normalmente $1 USD equivale a $3.900 cop.
         </p>
       </div>
     </div>
