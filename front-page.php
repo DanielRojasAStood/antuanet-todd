@@ -26,11 +26,12 @@
       <p class="title-24 m-b13">CEREMONY</p>
       <p class="title-30">March 8th, 2025</p>
       <p class="title-30 m-b13" style="line-height: normal">Baluarte San Ignacio</p>
-      <p class="title-32 m-b13" style="">5:00 P.M.</p>
+      <p class="title-30 m-b13" style="">5:00 P.M.</p>
       <p class="title-24 m-b20">RECEPTION</p>
-      <p class="title-30 m-b40" style="line-height: normal">
+      <p class="title-30 m-b13" style="line-height: normal">
       Hotel Charleston <br> Santa Teresa
       </p>
+      <p class="title-30 m-b40" style="">7:00 P.M.</p>
       <div class="grid">
         <button type="button" class="m-auto button button--transparent" data-open-modal="modal-1" > DRESS CODE </button>
         <!-- <button type="button" class="m-auto button button--transparent" data-open-modal="modal-2" > GIFTS </button> -->
