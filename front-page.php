@@ -391,7 +391,7 @@
             </svg>
           </button>
           <img
-            src="/wp-content/themes/antuanet-todd/img/dress-code-antuanet-DEF.png"
+            src="/wp-content/themes/antuanet-todd/img/newdresscodeantuanettodd-ezgif.com-jpg-to-webp-converter.webp"
             alt=""
             id=""
           />
