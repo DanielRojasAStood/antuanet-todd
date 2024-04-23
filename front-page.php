@@ -315,8 +315,8 @@
         </p>
 
         <div class="text-center m-b40">
-          <p class="title-18 m-b8">Kindly respond by JUNE 15th, 2025</p>
-          <p class="title-16">Por favor confirmar asistencia antes de JUNIO 15, 2025</p>
+          <p class="title-18 m-b8">Kindly respond by JUNE 15th, 2024</p>
+          <p class="title-16">Por favor confirmar asistencia antes de JUNIO 15, 2024</p>
         </div>
 
         <div>
