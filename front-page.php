@@ -3,333 +3,299 @@
 <body>
   <main>
 
-  <section class="section-1">
-    <img class="section-1__img-top" src="<?php echo IMG_BASE . 'marco-home-1.png' ?>" alt="home">
-    <img class="section-1__bckg" src="<?php echo IMG_BASE . 'background-one-blue-4.png' ?>" alt="">
-    <img class="section-1__bckg-two" src="<?php echo IMG_BASE . 'new-home-mobile-update.png' ?>" alt="">
-    <div class="section-1__copy">
-      <div class="m-b13">
-        <img src="<?php echo IMG_BASE . 'text-antuanet-todd.svg' ?>" alt="">
+  <section class="section section-1">
+    <figure class="text-center">
+      <img class="img-respondive" src="<?php echo IMG_BASE . '1.webp' ?>" alt="">
+    </figure>
+    <div class="section-1__content">
+      <div class="box text-center">
+        <div class="section-1__copy">
+          <p class="text-162 color--5E713E">Sofía & Leopoldo</p>
+          <p class="text-28 color--5E713E">NOVEMBER 14 - 16, 2024</p>
+          <p class="text-24 color--5E713E">Cartagena de Indias, Colombia</p>
+        </div>
       </div>
-      <p class="title-38">March 7-8th, 2025</p>
-      <p class="title-20">Cartagena de Indias, Colombia</p>
     </div>
-    <img class="section-1__img-bottom" src="<?php echo IMG_BASE . 'separador-one.webp' ?>" alt="">
   </section>
 
-  <section class="section-2" id="wedding">
-    <img class="section-2__bckg" src="<?php echo IMG_BASE . 'bg-two.webp' ?>" alt="">
-    <img class="section-2__bckg-two" src="<?php echo IMG_BASE . 'home-mobile-wedding-mobile.png' ?>" alt="">
-    <div class="section-2__copy">
-      <p class="title-26 m-b8">NUESTRA BODA</p>
-      <img class="m-b40" src="<?php echo IMG_BASE . 'text-our-wedding.svg' ?>" alt="">
-      <p class="title-24 m-b13">CEREMONY</p>
-      <p class="title-30">March 8th, 2025</p>
-      <p class="title-30 m-b13" style="line-height: normal">Baluarte San Ignacio</p>
-      <p class="title-30 m-b13" style="">5:00 P.M.</p>
-      <p class="title-24 m-b20">RECEPTION</p>
-      <p class="title-30 m-b13" style="line-height: normal">
-      Hotel Charleston <br> Santa Teresa
+  <section class="section-2">
+    <div class="box-color" style="background-color: #BEC8D2"></div>
+    <div class="section-2__wrapper">
+      <figure>
+        <img class="img-respondive" src="<?php echo IMG_BASE . '2.webp' ?>" alt="">
+      </figure>
+      <div class="section-2__copy">
+        <div class="box">
+          <p class="text-142 text-stroke-5 color--5E713E pb-20">Wedding</p>
+          <p class="text-32 pb-20">NUESTRA BODA</p>
+          <p class="text-32 pb-40">11.16.2024</p>
+  
+          <p class="text-92 pb-10">Ceremony</p>
+          <p class="text-22 pb-20">CEREMONIA</p>
+  
+          <p class="text-32-n text-stroke-5">Catedral</p>
+          <p class="text-32-n text-stroke-5 pb-10">Santa Catalina de Alejandria</p>
+
+          <div class="pb-10">
+            <button class="button button--gray text-stroke-5">Location</button>
+          </div>
+
+          <p class="text-32-n text-stroke-5 pb-60">5:00 P.M.</p>
+
+          <p class="text-92">Reception to Follow</p>
+          <p class="text-22 pb-20">RECEPCIÓN A CONTINUACIÓN</p>
+
+          <p class="text-32-n text-stroke-5 pb-10">Casa 1537</p>
+          <div class="pb-60">
+            <button class="button button--gray text-stroke-5">Location</button>
+          </div>
+
+          <p class="text-26">DRESS CODE</p>
+          <p class="text-32-n text-stroke-5 pb-10">Suit - Long Dress | Traje - Vestido Largo</p>
+          <div class="pb-60">
+            <button class="button button--gray text-stroke-5">View Example</button>
+          </div>
+
+          <p class="text-26 pb-10">GIFT - REGALOS</p>
+          <button class="button button--gray text-stroke-5">Click here</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-3">
+    <div class="box-color-2" style="background-color: #ADA0BC"></div>
+    <div class="section-3__wrapper">
+      <figure>
+        <img class="img-respondive" src="<?php echo IMG_BASE . '3.webp' ?>" alt="">
+      </figure>
+      <div class="section-3__copy">
+        <div class="box">
+            <p class="text-142 text-stroke-5 color--5E713E pb-20">Events</p>
+            <p class="text-32 pb-40">EVENTOS DE LA BODA</p>
+            <p class="text-32 pb-40">11.14.2024</p>
+    
+            <p class="text-92 pb-10">Welcome Cocktail</p>
+            <p class="text-22 pb-20">CÓCTEL DE BIENVENIDA</p>
+    
+            <p class="text-32-n text-stroke-5">Sogitel Legend</p>
+            <p class="text-32-n text-stroke-5 pb-10">Santa Clara Hotel</p>
+
+            <div class="pb-10">
+              <button class="button button--gray text-stroke-5">Location</button>
+            </div>
+
+            <p class="text-32-n text-stroke-5 pb-60">5:30 P.M.</p>
+
+            <p class="text-26">DRESS CODE</p>
+            <p class="text-32-n text-stroke-5"> Linen shirt and pants</p>
+            <p class="text-32-n text-stroke-5 pb-20"> Tropical cocktail dress</p>
+
+            <p class="text-32-n text-stroke-5">Camisa de Lino / Guayabera</p>
+            <p class="text-32-n text-stroke-5 pb-20">Vestido de cóctel tropical</p>
+            <button class="button button--gray">View Example</button>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="section-4">
+    <div class="box-color" style="background-color: #EDC484">
+      <div class="texto-center">
+        <p class="text-36 color--fff">ENJOY!</p>
+        <p class="text-142 text-stroke-5 color--fff text-center">Cartagena de Indias</p>
+      </div>
+    </div>
+    <div class="section-4__wrapper">
+      <img class="img-respondive" src="<?php echo IMG_BASE . '4.webp' ?>" alt="">
+
+      <div class="section-4__content">
+        <div class="box">
+          <p class="text-26-n pb-30">
+            We are thrilled to be hosting our wedding in Cartagena, Colombia's coastal gem. This city, designated as a UNESCO world heritage site, stands as one of South America's most significant cultural treasures. The walls of Cartagena de Indias grace the historical center, known as "the walled city," where you can discover squares, cobblestone streets, and exquisite, vibrant colonial buildings.
+          </p>
+          <p class="text-26-n">
+            The ultimate way to experience Cartagena is by strolling through it, immersing yourself in the maze of narrow streets and lush green plazas. We highly recommend lodging within the walled city, where everything is conveniently within walking distance. The streets are alive with constant live music, splendid restaurants, and quirky bars, all contributing to the vibrant atmosphere of Cartagena.
+          </p>
+
+          <span></span>
+          
+          <p class="text-26-n pb-30">
+            Estamos encantados de celebrar nuestra boda en Cartagena, la joya costera de Colombia. Esta ciudad, declarada Patrimonio de la Humanidad por la UNESCO, es uno de los tesoros culturales más importantes de Sudamérica. Las murallas de Cartagena de Indias adornan el centro histórico, conocido como "la ciudad amurallada", donde podrá descubrir plazas, calles adoquinadas y exquisitos y vibrantes edificios coloniales.
+          </p>
+          <p class="text-26-n">
+            La mejor forma de conocer Cartagena es paseando por ella, sumergiéndose en el laberinto de callejuelas y exuberantes plazas verdes. Recomendamos alojarse en la ciudad amurallada, donde todo está a un paso. Las calles están llenas de música en directo, espléndidos restaurantes y extravagantes bares, que contribuyen a la vibrante atmósfera de Cartagena.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-5__wrapper">
+    <div class="text-center m-b40">
+      <h2 class="text-142">Places to Visit!</h2>
+      <p class="text-28 pb-60" style="margin-top: -10px">LUGARES PARA VISITAR</p>
+    </div>
+    <div class="card-slick">
+
+      <div class="card-slick__container">
+        <div class="swiper-places slick1">
+          <div class="card-slick__item">
+            <div class="card-slick__item-box">
+              <img src="/wp-content/themes/sofi-leo/img/swiper-10.webp" alt="" width="" height="" />
+              <div class="card-slick__item-info">
+                <p class="text-24-1 mb-10 border-bottom">
+                TEATRO HEREDIA
+                </p>
+                <p class="text-22-1 text-stroke-5">
+                Magnificent eclectic-style 
+                building erected in 1902, 
+                designed by Luis Felipe Jaspe, 
+                the same architect who created 
+                the Cartagena Clock Tower.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-slick__item">
+            <div class="card-slick__item-box">
+              <img src="/wp-content/themes/sofi-leo/img/swiper-11.webp" alt="" width="" height="" />
+              <div class="card-slick__item-info">
+                <p class="text-24-1 mb-10 border-bottom">
+                murallas cartagena
+                </p>
+                <p class="text-22-1 text-stroke-5">
+                  Fortification that took more than 
+                  a hundred years to complete, 
+                  carried out in stages from 1586 
+                  to 1699, encompassing the 
+                  perimeter of the center of the 
+                  old city, San Diego and 
+                  Getsemaní.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-slick__item">
+            <div class="card-slick__item-box">
+              <img src="/wp-content/themes/sofi-leo/img/swiper-12.webp" alt="" width="" height="" />
+              <div class="card-slick__item-info">
+                <p class="text-24-1 mb-10 border-bottom">
+                Torre del reloj
+                </p>
+                <p class="text-22-1 text-stroke-5">
+                  Famous gateway to the walled 
+                  city, characterized by its baroque 
+                  stone doorway that precedes an 
+                  imposing structure.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-slick__item">
+            <div class="card-slick__item-box">
+              <img src="/wp-content/themes/sofi-leo/img/swiper-13.webp" alt="" width="" height="" />
+              <div class="card-slick__item-info">
+                <p class="text-24-1 mb-10 border-bottom">
+                isla de barú
+                </p>
+                <p class="text-22-1 text-stroke-5">
+                  Coastal area located 45 minutes 
+                  by boat, known for its 
+                  paradisiacal almost virgin white 
+                  sand beaches, transparent waters 
+                  and coral reefs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-slick__item">
+            <div class="card-slick__item-box">
+              <img src="/wp-content/themes/sofi-leo/img/swiper-14.webp" alt="" width="" height="" />
+              <div class="card-slick__item-info">
+                <p class="text-24-1 mb-10 border-bottom">
+                  castillo san felipe
+                </p>
+                <p class="text-22-1 text-stroke-5">
+                  One of the most famous sites, 
+                  corresponding to a castle built in 
+                  the seventeenth century, 
+                  considered the most outstanding 
+                  work of Spanish military 
+                  engineering in America.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-slick__item">
+            <div class="card-slick__item-box">
+              <img src="/wp-content/themes/sofi-leo/img/swiper-15.webp" alt="" width="" height="" />
+              <div class="card-slick__item-info">
+                <p class="text-24-1 mb-10 border-bottom">
+                cerro de la popa
+                </p>
+                <p class="text-22-1 text-stroke-5">
+                  Highest point in Cartagena, a 
+                  strategic position that allows 
+                  privileged views of both the 
+                  old city and the Caribbean Sea, 
+                  the island of Tierrabomba and 
+                  La Boquilla.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="section-5__cta">
+      <p class="text-center pb-60">
+        <span class="text-142">Suggestions</span>
+        <span class="text-38-1">IN CARTAGENA</span>
       </p>
-      <p class="title-30 m-b40" style="">7:00 P.M.</p>
-      <div class="grid">
-        <button type="button" class="m-auto button button--transparent" data-open-modal="modal-1" > DRESS CODE </button>
-        <!-- <button type="button" class="m-auto button button--transparent" data-open-modal="modal-2" > GIFTS </button> -->
-        <a href="https://www.honeyfund.com/site/HoneymoonfunBusler" target="_blank" class="m-auto button button--transparent" > GIFTS </a>
-      </div>
+
+      <div class="section-5__ctas">
+        <a href="#" class="link text-w-32">HOTELS</a> 
+        <a href="#" class="link text-w-32">RESTAURANTS</a> 
+        <a href="#" class="link text-w-32">COFFEE & DESSERTS</a> 
+        <a href="#" class="link text-w-32">BARS & PUBS</a> 
+        <a href="#" class="link text-w-32">BOUTIQUES</a> 
+        <a href="#" class="link text-w-32">BEAUTY SALONS</a> 
+      </div>      
+    </div>
+  </div>
+
+  <section class="section-6">
+    <div class="box-color" style="background-color: #C1C39C">
+      <p class="text-220 color--fff">R.S.V.P.</p>
     </div>
   </section>
 
-  <section class="section-2 section-reverse">
-    <div class="section-2__copy">
-      <p class="title-26 m-b8">FIESTA BIENVENIDA</p>
-      <img class="m-b40" src="<?php echo IMG_BASE . 'text-phantom-party.svg' ?>" alt="">
-      <p class="title-30">March 7th, 2025</p>
-      <p class="title-32 m-b13" style="">4:30 P.M.</p>
-      <p class="title-30 m-b40" style="line-height: normal">
-      Barco Phantom
-      </p>
-      <div class="section-2__cta">
-        <button type="button" class="m-auto button button--transparent" data-open-modal="modal-3" > DRESS CODE </button>
-      </div>
-    </div>
-    <img class="section-2__bckg" src="<?php echo IMG_BASE . 'bg-three.webp' ?>" alt="">
-    <img class="section-2__bckg-two" src="<?php echo IMG_BASE . 'home-mobile-phantom-boat-party.png' ?>" alt="">
-  </section>
-
-  <section class="section section-3">
-    <div class="section-3__bckg">
-      <img src="<?php echo IMG_BASE . 'bg-four.webp' ?>" alt="">
-    </div>
-
-    <div class="section-3__slick">
-      <div class="slick0">
-        <div class="slick-item">
-          <div class="slick-item__bckg">
-            <img src="<?php echo IMG_BASE . 'foto-novios-one.webp' ?>" alt="">
-          </div>
-        </div>
-        <div class="slick-item">
-          <div class="slick-item__bckg">
-            <img src="<?php echo IMG_BASE . 'foto-novios-two.webp' ?>" alt="">
-          </div>
-        </div>
-        <div class="slick-item">
-          <div class="slick-item__bckg">
-            <img src="<?php echo IMG_BASE . 'foto-novios-three.webp' ?>" alt="">
-          </div>
-        </div>
-        <div class="slick-item">
-          <div class="slick-item__bckg">
-            <img src="<?php echo IMG_BASE . 'foto-novios-four.webp' ?>" alt="">
-          </div>
-        </div>
-        <div class="slick-item">
-          <div class="slick-item__bckg">
-            <img src="<?php echo IMG_BASE . 'foto-novios-five.webp' ?>" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section-3__copy">
-      <p class="title-36 m-b40">CELEBRATE WITH US!</p>
-      <div class="section-3__countdown" id="countdown-timer"></div>
-    </div>
-  </section>
-
-  <section class="section section-4">
-    <div class="section-4__bckg">
-      <img src="<?php echo IMG_BASE . 'bg-five.webp' ?>" alt="">
-    </div>
-    <img class="section-1__img-bottom" src="<?php echo IMG_BASE . 'separador-one.webp' ?>" alt="">
-  </section>
-
-  <section class="section section-5" id="cartagena">
-    <div class="section-5__bckg">
-      <img src="<?php echo IMG_BASE . 'bg-six.webp' ?>" alt="">
-    </div>
-    <div class="section-5__wrapper">
-      <div class="text-center m-b40">
-        <img src="<?php echo IMG_BASE . 'text-cartagena-indias.svg' ?>" alt="">
-      </div>
-      <div class="section-5__copy">
-        <p class="title-20 m-b20">
-          We were very excited to have our wedding in Cartagena. A city full of magic, charm, history and tradition, which is characterized by its great wall, cobblestone streets and beautiful colonial houses. Cartagena is a UNESCO World Heritage Site and is considered one of the greatest cultural treasures of Latin America.
-        </p>
-        <p class="title-20">
-          We would like to make some recommendations, so that you can enjoy your stay in this wonderful place to the fullest. The best way to experience Cartagena is to walk and explore its labyrinths of narrow streets and lush squares. Ideally, you should stay in the historic district, so that you can be within walking distance of places of interest and experience live music, excellent gastronomy and popular art.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-6" id="places">
-    <img class="section-6__bckg" src="<?php echo IMG_BASE . 'bg-seven.webp' ?>" alt="">
-
-    <div class="section-6__copy">
-      <div class="section-6__copy-img">
+  <section class="section-7">
+    <figure>
+      <img class="" src="<?php echo IMG_BASE . '6.webp' ?>" alt="">
+    </figure>
+    <div class="section-7__form">
+      <div class="box">
         <div class="text-center">
-          <img src="<?php echo IMG_BASE . 'places-of-interest.svg' ?>" alt="">
-        </div>
-      </div>
-      <div>
-        <p class="title-26 text-center m-b80">SITIOS DE INTERÉS</p>
-        <div class="section-6__items">
-          <a href="/index.php/cartagena#hoteles" class="section-6__item">
-            HOTELS
-            <img src="<?php echo IMG_BASE . 'icon-hotels.svg' ?>" alt="">
-          </a>
-        </div>
-        <div class="section-6__items">
-          <a href="/index.php/cartagena#restaurantes" class="section-6__item">
-            RESTAURANTS
-            <img src="<?php echo IMG_BASE . 'icon-restaurants.svg' ?>" alt="">
-          </a>
-        </div>
-        <div class="section-6__items">
-          <a href="/index.php/cartagena#brunch" class="section-6__item">
-            BRUNCH & DESSERTS
-            <img src="<?php echo IMG_BASE . 'icon-brunch desserts.svg' ?>" alt="">
-          </a>
-        </div>
-        <div class="section-6__items">
-          <a href="/index.php/cartagena#bares" class="section-6__item">
-            BARS
-            <img src="<?php echo IMG_BASE . 'icon-bars.svg' ?>" alt="">
-          </a>
-        </div>
-        <div class="section-6__items">
-          <a href="/index.php/cartagena#boutique" class="section-6__item">
-            BOUTIQUES
-            <img src="<?php echo IMG_BASE . 'icon-boutique.svg' ?>" alt="">
-          </a>
-        </div>
-        <div class="section-6__items">
-          <a href="/index.php/cartagena#peluquerias" class="section-6__item">
-            BEAUTY SALONS
-            <img src="<?php echo IMG_BASE . 'icon-beauty-salon.svg' ?>" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-7">
-    <div class="section-7__bckg">
-      <img src="<?php echo IMG_BASE . 'bg-eight.webp' ?>" alt="">
-    </div>
-    <div class="section-7__wrapper">
-      <div class="text-center m-b40">
-        <h2 class="title-56">PLACES TO VISIT</h2>
-      </div>
-      <div class="card-slick">
-
-        <div class="card-slick__container">
-          <div class="swiper-places slick1">
-            <div class="card-slick__item">
-              <div class="card-slick__item-box">
-                <img src="/wp-content/themes/antuanet-todd/img/swiper-10.webp" alt="" width="" height="" />
-                <div class="card-slick__item-info">
-                  <p class="title-22 mb-10 border-bottom">
-                  TEATRO HEREDIA
-                  </p>
-                  <p class="title-16">
-                  Magniﬁcent eclectic-style 
-                  building erected in 1902, 
-                  designed by Luis Felipe Jaspe, 
-                  the same architect who created 
-                  the Cartagena Clock Tower.
-                  </p>
-                </div>
-              </div>
-            </div>
-  
-            <div class="card-slick__item">
-              <div class="card-slick__item-box">
-                <img src="/wp-content/themes/antuanet-todd/img/swiper-11.webp" alt="" width="" height="" />
-                <div class="card-slick__item-info">
-                  <p class="title-22 mb-10 border-bottom">
-                  murallas cartagena
-                  </p>
-                  <p class="title-16">
-                    Fortiﬁcation that took more than 
-                    a hundred years to complete, 
-                    carried out in stages from 1586 
-                    to 1699, encompassing the 
-                    perimeter of the center of the 
-                    old city, San Diego and 
-                    Getsemaní.
-                  </p>
-                </div>
-              </div>
-            </div>
-  
-            <div class="card-slick__item">
-              <div class="card-slick__item-box">
-                <img src="/wp-content/themes/antuanet-todd/img/swiper-12.webp" alt="" width="" height="" />
-                <div class="card-slick__item-info">
-                  <p class="title-22 mb-10 border-bottom">
-                  Torre del reloj
-                  </p>
-                  <p class="title-16">
-                    Famous gateway to the walled 
-                    city, characterized by its baroque 
-                    stone doorway that precedes an 
-                    imposing structure.
-                  </p>
-                </div>
-              </div>
-            </div>
-  
-            <div class="card-slick__item">
-              <div class="card-slick__item-box">
-                <img src="/wp-content/themes/antuanet-todd/img/swiper-13.webp" alt="" width="" height="" />
-                <div class="card-slick__item-info">
-                  <p class="title-22 mb-10 border-bottom">
-                  isla de barú
-                  </p>
-                  <p class="title-16">
-                    Coastal area located 45 minutes 
-                    by boat, known for its 
-                    paradisiacal almost virgin white 
-                    sand beaches, transparent waters 
-                    and coral reefs.
-                  </p>
-                </div>
-              </div>
-            </div>
-  
-            <div class="card-slick__item">
-              <div class="card-slick__item-box">
-                <img src="/wp-content/themes/antuanet-todd/img/swiper-14.webp" alt="" width="" height="" />
-                <div class="card-slick__item-info">
-                  <p class="title-22 mb-10 border-bottom">
-                    castillo san felipe
-                  </p>
-                  <p class="title-16">
-                    One of the most famous sites, 
-                    corresponding to a castle built in 
-                    the seventeenth century, 
-                    considered the most outstanding 
-                    work of Spanish military 
-                    engineering in America.
-                  </p>
-                </div>
-              </div>
-            </div>
-  
-            <div class="card-slick__item">
-              <div class="card-slick__item-box">
-                <img src="/wp-content/themes/antuanet-todd/img/swiper-15.webp" alt="" width="" height="" />
-                <div class="card-slick__item-info">
-                  <p class="title-22 mb-10 border-bottom">
-                  cerro de la popa
-                  </p>
-                  <p class="title-16">
-                    Highest point in Cartagena, a 
-                    strategic position that allows 
-                    privileged views of both the 
-                    old city and the Caribbean Sea, 
-                    the island of Tierrabomba and 
-                    La Boquilla.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
+          <div class="pb-20">
+            <img class="" src="<?php echo IMG_BASE . 'logo.svg' ?>" alt=""> 
           </div>
+
+          <p class="text-26-n text-stroke-3 pb-10">Kindly respond by September 26th, 2024</p>
+          <p class="text-26-n text-stroke-3">Por favor confirmar su asistencia antes</p>
+          <p class="text-26-n text-stroke-3">del 16 de Septiembre, 2024</p>
         </div>
+        <?php echo do_shortcode('[contact-form-7 id="9885dbb" title="Contact form 1"]')?>
       </div>
     </div>
-  </section>
-
-  <section class="section section-8" id="rsvp">
-    <img class="section-8__bckg" src="<?php echo IMG_BASE . 'bg-nine.webp' ?>" alt="">
-    <img class="section-8__flower" src="<?php echo IMG_BASE . 'flor-five.webp' ?>" alt="">
-
-    <div class="section-8__copy">
-      <div>
-        <p class="title-56 text-center m-b20">
-        R.S.V.P.
-        </p>
-
-        <div class="text-center m-b40">
-          <p class="title-18 m-b8">Kindly respond by JUNE 15th, 2025</p>
-          <p class="title-16">Por favor confirmar asistencia antes de JUNIO 15, 2025</p>
-        </div>
-
-        <div>
-          <?php echo do_shortcode('[contact-form-7 id="d5e622f" title="Formulario de contacto 1"]')?>
-        </div>
-
-        
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-9">
-
   </section>
 
   <section class="map">
@@ -340,7 +306,7 @@
           <defs>
             <style>
               .cls-1 {
-                fill: #3060A9
+                fill: #C1C39C
               }
             </style>
           </defs>
@@ -352,20 +318,16 @@
       </div>
       <div class="map__copy">
         <div>
-          <h4 class="title-18 m-b8">
+          <h4 class="text-24 m-b8" style="line-height: normal">
           RAFAEL NUÑEZ
           </h4>
-          <p class="title-10 m-b8">
-          INTERNATIONAL AIRPORT<br>
-          CARTAGENA, COLOMBIA 
+          <p class="text-18 pb-10">
+          INTERNATIONAL AIRPORT
           </p>
+          <p class="text-12 pb-20">Cartagena, Colombia.</p>
         </div>
-        <p class="title-10 border" style="color: #606060">
-          El aeropuerto está a 10 minutos en taxi de la ciudad amurallada. Hay servicios de taxi autorizados las 24 horas del día. Los precios son fijos y están estipulados por ley.
-          <br>
-          La tarifa a Getsemaní cuesta unos $14.000 cop. A la zona hotelera del centro histórico (Ciudad Amurallada) alrededor de $14.000 cop y a la zona de Bocagrande cuesta $20.000 cop.
-          <br> <br>
-          Normalmente $1 USD equivale a $3.900 cop.
+        <p class="text-14 border text-stroke-2" style="color: #606060">
+          Flight to Cartagena on the Caribbean coast. Jet Blue, American Airlines, Avianca, Spirit Air and Copa Airlines operate direct flights to the Rafael Nuñez Airport. The airport is a short 10-minutes taxi journey to the old town. There are authorized taxi services 24 hours. The rate to Getsemaní costs about $14.000 cop. To the hotel zone of the Historic Center (Ciudad Amurallada) about $14.000 cop and to the Bocagrande zone it costs $20.000 cop. Normally $1 USD is equivalent to $3.900 cop. 
         </p>
       </div>
     </div>
@@ -391,7 +353,7 @@
             </svg>
           </button>
           <img
-            src="/wp-content/themes/antuanet-todd/img/dress-code-antuanet-DEF.png"
+            src="/wp-content/themes/sofi-leo/img/dress-code-antuanet-DEF.png"
             alt=""
             id=""
           />
@@ -418,7 +380,7 @@
             </svg>
           </button>
           <img
-            src="/wp-content/themes/antuanet-todd/img/dress-code-party.png"
+            src="/wp-content/themes/sofi-leo/img/dress-code-party.png"
             alt=""
             id=""
           />
@@ -445,7 +407,7 @@
             </svg>
           </button>
           <img
-            src="/wp-content/themes/antuanet-todd/img/newdresscodeantuanettodd-ezgif.com-jpg-to-webp-converter.webp"
+            src="/wp-content/themes/sofi-leo/img/newdresscodeantuanettodd-ezgif.com-jpg-to-webp-converter.webp"
             alt=""
             id=""
             

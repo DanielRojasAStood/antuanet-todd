@@ -24,9 +24,9 @@
   <meta property="og:url" content="<?=wp_get_canonical_url()?>" />
   <meta property="og:description" content="<?=get_the_excerpt()?>" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+    </style>
 
   <!-- wordpress header includes -->
   <?php wp_head(); ?>
@@ -63,14 +63,14 @@
 <section class="menu-mobile" data-menu-mobile>
   <nav>
     <ul>
-      <li><a class="header__link" href="#wedding" data-link>OUR WEDDING</a></li>
-      <li><a class="header__link" href="#cartagena" data-link>CARTAGENA</a></li>
+      <li><a class="header__link" href="#wedding" data-link>WEDDING</a></li>
+      <li><a class="header__link" href="#events" data-link>EVENTS</a></li>
       <li>
         <a href="/">
           <img src="<?php echo IMG_BASE . 'logo.svg' ?>" class="header__logo" alt="" id="" />
         </a>
       </li>
-      <li><a class="header__link" href="#places" data-link>PLACES OF INTEREST</a></li>
+      <li><a class="header__link" href="#cartagena" data-link>CARTAGENA</a></li>
       <li><a class="header__link" href="#rsvp" data-link>R.S.V.P.</a></li>
     </ul>
   </nav>

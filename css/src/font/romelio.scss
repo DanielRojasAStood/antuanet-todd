@@ -1,0 +1,10 @@
+$romelio-font-path: "../../font/romelio" !default;
+// regular
+@font-face {
+  font-family: "RomelioSans";
+  src: url("#{$romelio-font-path}/RomelioSans.woff2") format("woff2"),
+    url("#{$romelio-font-path}/RomelioSans.woff") format("woff"),
+    url("#{$romelio-font-path}/RomelioSans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
