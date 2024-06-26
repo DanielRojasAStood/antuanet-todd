@@ -323,13 +323,9 @@ get_header();
           <p class="title-18 m-b8">Kindly respond by JUNE 15th, 2024</p>
           <p class="title-16">Por favor confirmar asistencia antes de JUNIO 15, 2024</p>
         </div>
-
         <div>
           <?php echo do_shortcode('[rsvp_form]')?>
-          
         </div>
-
-        
       </div>
     </div>
   </section>
