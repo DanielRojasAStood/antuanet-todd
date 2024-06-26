@@ -1814,7 +1814,8 @@ input[type="radio"]:checked + span:before {
   margin: 0;
 }
 
-.form-group-button input {
+.form-group-button input,
+.form-group-button button{
   font-family: inherit;
   border: 0;
   margin-top: 40px;
@@ -1824,6 +1825,7 @@ input[type="radio"]:checked + span:before {
   font-weight: 400;
   letter-spacing: 4px;
   background-color: var(--3060A9);
+  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -1993,4 +1995,46 @@ input[type="radio"]:checked + span:before {
     width: 1px;
     height: 80px;
   }
+}
+
+
+
+.step {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.step.active {
+  display: block;
+  opacity: 1;
+}
+
+.rsvp {
+  &__label {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+}
+
+#nombre-error {
+  margin-top: -15px;
+  font-size: 12px;
+}
+
+.event-fields p {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input {
+  margin-bottom: 30px;
+}
+
+.wpcf7-list-item input {
+  margin-bottom: 10px;
 }
