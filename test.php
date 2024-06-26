@@ -326,6 +326,7 @@ get_header();
 
         <div>
           <?php echo do_shortcode('[rsvp_form]')?>
+          
         </div>
 
         
