@@ -1,9 +1,4 @@
-<?php 
-/* 
-Template Name: Test
-*/
-get_header();
-?>
+<?php include('header.php'); ?>
 
 <body>
   <main>
@@ -315,7 +310,7 @@ get_header();
 
     <div class="section-8__copy">
       <div>
-      <p class="title-56 text-center m-b20">
+        <p class="title-56 text-center m-b20">
         R.S.V.P.
         </p>
 
@@ -323,12 +318,18 @@ get_header();
           <p class="title-18 m-b8">Kindly respond by JUNE 15th, 2024</p>
           <p class="title-16">Por favor confirmar asistencia antes de JUNIO 15, 2024</p>
         </div>
-        <div class="form-group-button">
-          <button type="button" data-open-modal="modal-4">R.S.V.P</button>
+
+        <div>
+          <?php echo do_shortcode('[contact-form-7 id="d5e622f" title="Formulario de contacto 1"]')?>
         </div>
-          
+
+        
       </div>
     </div>
+  </section>
+
+  <section class="section section-9">
+
   </section>
 
   <section class="map">
@@ -449,33 +450,6 @@ get_header();
             id=""
             
           />
-        </div>
-      </div>
-    </section>
-
-    <section class="modal modal-rsvp" style="display: none" data-modal="modal-4">
-      <div class="modal__wrapper">
-      <div class="progress-bar">
-        <div class="progress"></div>
-    </div>
-        <div class="modal__body">
-        
-          <button type="button" data-close-modal>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-              <path
-                fill="#fff"
-                stroke-miterlimit="10"
-                d="M7.72 6.28 6.28 7.72 23.56 25 6.28 42.28l1.44 1.44L25 26.44l17.28 17.28 1.44-1.44L26.44 25 43.72 7.72l-1.44-1.44L25 23.56z"
-                font-family="none"
-                font-size="none"
-                font-weight="none"
-                style="mix-blend-mode: normal"
-                text-anchor="none"
-                transform="scale(5.1)"
-              />
-            </svg>
-          </button>
-          <?php echo do_shortcode('[rsvp_form]')?>
         </div>
       </div>
     </section>

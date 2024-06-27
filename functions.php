@@ -113,7 +113,7 @@ function display_rsvp_form() {
             </p>
             <h2 class="rsvp__label" style="margin-bottom: 20px">ADDITIONAL INFORMATION</h2>
             <label for="arrival_date">WHAT IS YOUR ARRIVALS DATE?</label>
-            <input type="text" name="arrival_date" id="arrival_date">
+            <input type="date" name="arrival_date" id="arrival_date">
             
             <label for="food_restrictions">TELL US IF YOU HAVE ANY FOOD ALLERGIES OR RESTRICTIONS</label>
             <input type="text" name="food_restrictions" id="food_restrictions">
@@ -203,7 +203,6 @@ function fetch_guest_info() {
         $nombre = sanitize_text_field($_POST['nombre']);
         
         $guest_list = array(
-            'daniel' => array('daniel'),
             'Rodrigo Bravo' => array('Rodrigo Bravo', 'Megan Opazo'),
             'Yolanda Vasquez' => array('Yolanda Vasquez'),
             'Patricia Carhuatocto' => array('Patricia Carhuatocto'),
@@ -298,7 +297,54 @@ function fetch_guest_info() {
             'Joan Hurley' => array('Joan Hurley'),
             'Matt Pellegrino' => array('Matt Pellegrino', 'Delsa Pellegrino'),
             'Mike Garafolo' => array('Mike Garafolo', 'Brittney Garafolo'),
-            'Rick Guerrieri' => array('Rick Guerrieri')
+            'Rick Guerrieri' => array('Rick Guerrieri'),
+            'Karen Zannelli' => array('Karen Zannelli', 'Alvaro Zannelli'),
+            'Karen Navarra' => array('Karen Navarra', 'Kevin Navarra'),
+            'Anapaula Satiesteban' => array('Anapaula Satiesteban', 'Invitado'),
+            'Michael Busler' => array('Michael Busler', 'Katherine Busler'),
+            'Adam Busler' => array('Adam Busler', 'Jennifer Busler'),
+            'Kaitlyn Debernardo' => array('Kaitlyn Debernardo', 'Ralph Debernardo'),
+            'Veronica Moriarity' => array('Veronica Moriarity', 'Dave Moriarity'),
+            'Mary Beth Moriarity' => array('Mary Beth Moriarity', 'Paddy Moriarity'),
+            'Dean Moriarity' => array('Dean Moriarity'),
+            'Dylan Moriarity' => array('Dylan Moriarity', 'Ashley Galvan'),
+            'Justin Gentile' => array('Justin Gentile'),
+            'Jimmy Gentile' => array('Jimmy Gentile'),
+            'Justin Rau' => array('Justin Rau', 'Gabrielle Beach'),
+            'Jim Abbott' => array('Jim Abbott'),
+            'AJ Holland' => array('AJ Holland'),
+            'Jeremy Glick' => array('Jeremy Glick'),
+            'Michael McCarron' => array('Michael McCarron', 'Raina Roche'),
+            'Joe Marciani' => array('Joe Marciani', 'Tina Marchiani'),
+            'Isabel Tyler' => array('Isabel Tyler', 'Tristan Tyler'),
+            'Chris Ruley' => array('Chris Ruley'),
+            'Ryan Rothstein' => array('Ryan Rothstein'),
+            'Sal Imperiale' => array('Sal Imperiale', 'Carly Imperiale'),
+            'Adam Seiden' => array('Adam Seiden', 'Melissa Bennett'),
+            'Janey Goldberg' => array('Janey Goldberg', 'Andrew Steinmetz'),
+            'Matt Beirne' => array('Matt Beirne', 'Danielle Naoum'),
+            'Joe Cappocci' => array('Joe Cappocci'),
+            'Jackie Masters' => array('Jackie Masters', 'Joe Masters'),
+            'Keith Corcoran' => array('Keith Corcoran', 'Emily Corcoran'),
+            'Dan Lombardi' => array('Dan Lombardi', 'Montana Lombardi'),
+            'Nate Segal' => array('Nate Segal'),
+            'Dave Hubsher' => array('Dave Hubsher', 'Ali Hubsher'),
+            'Mike Boyle' => array('Mike Boyle', 'Nadia Boyle'),
+            'Mike Bagnoli' => array('Mike Bagnoli', 'Laura Bagnoli'),
+            'Colin Dampier' => array('Colin Dampier', 'Anna Connors'),
+            'Frank Diebold' => array('Frank Diebold', 'Chelsea Prior'),
+            'Gage O\'Connell' => array('Gage O\'Connell', 'Megan O\'Connell'),
+            'Sam Biddle' => array('Sam Biddle'),
+            'Matt Wetherell' => array('Matt Wetherell', 'Cassie Wetherell'),
+            'Zack Metheson' => array('Zack Metheson', 'Emily Matheson'),
+            'Justin Davis' => array('Justin Davis', 'Chelsea Davis'),
+            'John Savage' => array('John Savage', 'Tatum Savage'),
+            'Matt Andrews' => array('Matt Andrews', 'Meghan Andrews'),
+            'Mario Lolo Macedo' => array('Mario Lolo Macedo', 'Luz Mery Macedo'),
+            'Marya Macedo' => array('Marya Macedo'),
+            'Marjorie Berrocal' => array('Marjorie Berrocal', 'Alex Ramos'),
+            'Carl Harris' => array('Carl Harris'),
+            'Bryan Sorensen' => array('Bryan Sorensen')
         );
 
         if (isset($guest_list[$nombre])) {
