@@ -21,9 +21,15 @@ var currentStep = 0;
 var steps = $(".step");
 var nameValidated = false;
 
+function updateProgressBar() {
+  var progress = (currentStep / (steps.length - 1)) * 100;
+  $(".progress").css("width", progress + "%");
+}
+
 function showStep(step) {
   steps.removeClass("active");
   steps.eq(step).addClass("active");
+  updateProgressBar();
 }
 
 $(".next-step").click(function () {
@@ -35,6 +41,7 @@ $(".next-step").click(function () {
     currentStep++;
     showStep(currentStep);
   }
+  updateProgressBar();
 });
 
 $(".prev-step").click(function () {
@@ -42,10 +49,12 @@ $(".prev-step").click(function () {
     currentStep--;
     showStep(currentStep);
   }
+  updateProgressBar();
 });
 
 // Show the first step
 showStep(currentStep);
+updateProgressBar();
 
 function validateName() {
   var nombre = $("#nombre").val();

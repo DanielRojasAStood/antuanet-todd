@@ -1205,7 +1205,7 @@ body {
       }
 
       @media only screen and (min-width: 1280px) {
-        padding: 82px 100px;
+        padding: 40px 100px;
         max-width: 790px;
       }
 
@@ -1671,7 +1671,12 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 750px;
     height: 100%;
+    margin: 0 auto;
+
+    @media only screen and (min-width: 1024px) {
+    }
   }
 
   &__body {
@@ -1850,7 +1855,6 @@ input[type="radio"] + span span {
 .wpcf7-list-item {
   display: block;
   margin-left: 0;
-  padding-bottom: 8px;
 }
 
 .wpcf7-list-item-label {
@@ -1881,7 +1885,7 @@ input[type="radio"] + span span {
   border: 0;
   margin-top: 40px;
   min-width: 200px;
-  padding: 21px 35px;
+  padding: 15px 35px;
   color: var(--FFF);
   font-size: var(--10);
   font-weight: 400;
@@ -1913,14 +1917,15 @@ input[type="radio"] + span span {
     text-align: center;
 
     button {
-      margin-top: 40px;
+      margin-top: 0;
     }
   }
 }
 
 .wpcf7-form-control-wrap {
   position: relative;
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   column-gap: 10px;
 
   @media only screen and (min-width: 1024px) {
@@ -1946,7 +1951,7 @@ input[type="radio"] + span span {
   select,
   [type="date"] {
     font-size: var(--14);
-    height: 60px;
+    height: 45px;
     padding: 0 20px;
   }
 
@@ -2103,7 +2108,7 @@ input[type="radio"] + span span {
   opacity: 1;
 }
 
-.rsvp {
+#rsvp {
   &__label {
     font-size: var(--10);
     font-style: normal;
@@ -2119,6 +2124,30 @@ input[type="radio"] + span span {
       font-size: var(--24);
       line-height: 38px;
       letter-spacing: 7.2px;
+    }
+  }
+
+  .title {
+    &-16 {
+      font-size: var(--14);
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+      @media only screen and (min-width: 1024px) {
+        font-size: var(--16);
+      }
+    }
+
+    &-18 {
+      font-size: var(--14);
+      letter-spacing: 1.8px;
+      line-height: normal;
+      font-weight: 500;
+
+      @media only screen and (min-width: 1024px) {
+        font-size: var(--18);
+      }
     }
   }
 }
@@ -2143,6 +2172,7 @@ label {
   margin-bottom: 10px;
   font-size: 12px;
   line-height: normal;
+  text-align: left;
 
   @media only screen and (min-width: 1024px) {
     margin-bottom: 10px;
@@ -2151,7 +2181,7 @@ label {
 }
 
 input {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .wpcf7-list-item input {
@@ -2226,6 +2256,7 @@ input {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
+  row-gap: 5px;
 
   @media only screen and (min-width: 1024px) {
     grid-template-columns: 1fr 1fr;
@@ -2253,7 +2284,7 @@ input {
     font-size: var(--14);
     font-style: normal;
     font-weight: 500;
-    line-height: 38px; 
+    line-height: 38px;
     letter-spacing: 1.8px;
     border: 1px solid;
     width: 100%;
@@ -2279,5 +2310,118 @@ input {
         width: auto;
       }
     }
+  }
+}
+
+.modal-rsvp .modal__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  min-width: min-content;
+  max-width: 750px;
+  padding: 40px 20px;
+  overflow: auto;
+  height: 97vh;
+
+  @media only screen and (min-width: 1024px) {
+    display: grid;
+    place-content: center;
+    padding: 40px 40px;
+  }
+}
+
+.modal-rsvp .form-group-button {
+  position: relative;
+}
+
+.modal-rsvp .form-group-button button {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: auto;
+
+  @media only screen and (min-width: 1024px) {
+    width: 330px !important;
+  }
+}
+
+.modal-rsvp .title-56 {
+  margin-top: 30px;
+  color: #3060a9;
+}
+
+.modal-rsvp #nombre-error {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.modal-rsvp {
+  .title {
+    &-16 {
+      font-size: var(--14);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+
+      @media only screen and (min-width: 1024px) {
+        font-size: var(--16);
+        line-height: normal;
+      }
+    }
+
+    &-18 {
+      font-size: var(--14);
+      letter-spacing: 1.8px;
+      line-height: normal;
+      font-weight: 500;
+
+      @media only screen and (min-width: 1024px) {
+        font-size: var(--18);
+      }
+    }
+  }
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #e0e0e0;
+}
+
+.progress {
+  width: 0;
+  height: 100%;
+  background-color: #3060a9;
+  transition: width 0.3s ease;
+}
+
+.rsvp__label {
+  color: var(--000);
+  text-align: center;
+  font-family: var(--font-hatton);
+  font-size: var(--18);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+
+  @media only screen and (min-width: 1024px) {
+    font-size: var(--24);
+    letter-spacing: 7.2px;
+    line-height: 38px;
+  }
+}
+
+form {
+  width: 100%;
+  padding-top: 50px;
+
+  @media only screen and (min-width: 1024px) {
+    padding-top: 0;
   }
 }

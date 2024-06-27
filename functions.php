@@ -56,30 +56,24 @@ add_action('wp_head', 'add_open_graph_tags');
 function display_rsvp_form() {
     ?>
     <form id="rsvp-form" method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
+    
         <div class="step step-1">
-            <h2 class="rsvp__label">Enter Full Name</h2>
+        <p class="title-56 text-center m-b20">
+        R.S.V.P.
+        </p>
+
+        <div class="text-center m-b40">
+          <p class="title-18 m-b8">Kindly respond by JUNE 15th, 2024</p>
+          <p class="title-16">Por favor confirmar asistencia antes de JUNIO 15, 2024</p>
+        </div>
+            <h2 class="rsvp__label" style="margin-bottom: 10px">ENTER FULL NAME</h2>
             <input type="text" name="nombre" id="nombre" required placeholder="Nombre Completo">
             <div class="form-group-button">
                 <button type="button" class="next-step">FIND YOUR INVITATION</button>
             </div>
         </div>
-        <!-- <div class="step step-2">
-            <h2 class="rsvp__label">ARE YOU ATTENDING?</h2>
-            <div class="form-group__full">
-            <div id="event-1-fields" class="event-fields"></div>
-            </div>
-            <div class="form-group-button">
-            <button type="button" class="prev-step">Back</button>
-            <button type="button" class="next-step">Next</button>
-            </div>
-        </div> -->
         <div class="step step-2">
             <p class="title--16" style="letter-spacing: 8px">NUESTRA BODA</p>
-
-            <div class="text-center step-img">
-                <img src="<?php echo IMG_BASE . 'our-wedding.svg'?>" alt="">
-            </div>
-
             <p class="title--18" style="margin-bottom: 7px">CEREMONY</p>
             <p class="title--16">March 8th, 2025</p>
             <p class="title--16">Baluarte San Ignacio</p>
@@ -87,7 +81,7 @@ function display_rsvp_form() {
 
             <p class="title--18" style="margin-bottom: 7px">RECEPTION</p>
             <p class="title--16">Hotel Charleston</p>
-            <p class="title--16" style="margin-bottom: 40px">Santa Teresa</p>
+            <p class="title--16" style="margin-bottom: 30px">Santa Teresa</p>
 
             <div class="form-group__full">
             <div id="event-1-fields" class="event-fields"></div>
@@ -99,9 +93,7 @@ function display_rsvp_form() {
         </div>
         <div class="step step-3">
             <p class="title--16" style="letter-spacing: 8px; margin-bottom: 7px">FIESTA BIENVENIDA</p>
-            <div class="text-center step-img">
-                <img src="<?php echo IMG_BASE . 'welcome-party.svg'?>" alt="">
-            </div>
+            <p class="title--18" style="margin-bottom: 7px">WELCOME PHANTOM PARTY</p>
             <p class="title--16">March 7th, 2025</p>
             <p class="title--16">Barco Phantom</p>
             <p class="title--16" style="margin-bottom: 50px">5:00 P.M.</p>
@@ -116,7 +108,10 @@ function display_rsvp_form() {
 
         </div>
         <div class="step step-4">
-            <h2 class="rsvp__label">Additional Information</h2>
+            <p class="title-56 text-center m-b20">
+                R.S.V.P.
+            </p>
+            <h2 class="rsvp__label" style="margin-bottom: 20px">ADDITIONAL INFORMATION</h2>
             <label for="arrival_date">WHAT IS YOUR ARRIVALS DATE?</label>
             <input type="text" name="arrival_date" id="arrival_date">
             
