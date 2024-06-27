@@ -64,8 +64,8 @@ function validateName() {
         $("#nombre-error").remove(); // Eliminar mensaje de error si existe
         var guests = response.data.guests;
         var events = [
-          "ARE YOU ATTENDING?",
-          "WEDDING DAY",
+          // "ARE YOU ATTENDING?",
+          "OUR WEDDING",
           "WELCOME PHANTOM PARTY",
         ];
         var fields = ["event-1-fields", "event-2-fields", "event-3-fields"];
@@ -75,14 +75,14 @@ function validateName() {
           eventFields.empty();
           guests.forEach(function (guest) {
             eventFields.append(
-              `<p>${guest}</p>
+              `<p class="title-18">${guest}</p>
                <span class="wpcf7-form-control-wrap">
                   <span class="wpcf7-form-control">
                     <span class="wpcf7-list-item">
                       <label>
                         <input type="radio" name="${event}_${guest}" value="yes" required checked="checked"> 
                         <span class="wpcf7-list-item-label">
-                          Yes
+                          <span>Accept</span>
                         </span>
                     </label>
                     </span>
@@ -91,7 +91,7 @@ function validateName() {
                       <label>
                         <input type="radio" name="${event}_${guest}" value="no" required> 
                         <span class="wpcf7-list-item-label">
-                          No
+                          <span>Decline</span>
                         </span>
                     </label>
                </span>

@@ -58,12 +58,12 @@ function display_rsvp_form() {
     <form id="rsvp-form" method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
         <div class="step step-1">
             <h2 class="rsvp__label">Enter Full Name</h2>
-            <input type="text" name="nombre" id="nombre" required>
+            <input type="text" name="nombre" id="nombre" required placeholder="Nombre Completo">
             <div class="form-group-button">
-                <button type="button" class="next-step">Next</button>
+                <button type="button" class="next-step">FIND YOUR INVITATION</button>
             </div>
         </div>
-        <div class="step step-2">
+        <!-- <div class="step step-2">
             <h2 class="rsvp__label">ARE YOU ATTENDING?</h2>
             <div class="form-group__full">
             <div id="event-1-fields" class="event-fields"></div>
@@ -72,29 +72,50 @@ function display_rsvp_form() {
             <button type="button" class="prev-step">Back</button>
             <button type="button" class="next-step">Next</button>
             </div>
+        </div> -->
+        <div class="step step-2">
+            <p class="title--16" style="letter-spacing: 8px">NUESTRA BODA</p>
+
+            <div class="text-center step-img">
+                <img src="<?php echo IMG_BASE . 'our-wedding.svg'?>" alt="">
+            </div>
+
+            <p class="title--18" style="margin-bottom: 7px">CEREMONY</p>
+            <p class="title--16">March 8th, 2025</p>
+            <p class="title--16">Baluarte San Ignacio</p>
+            <p class="title--16" style="margin-bottom: 20px">7:00 P.M.</p>
+
+            <p class="title--18" style="margin-bottom: 7px">RECEPTION</p>
+            <p class="title--16">Hotel Charleston</p>
+            <p class="title--16" style="margin-bottom: 40px">Santa Teresa</p>
+
+            <div class="form-group__full">
+            <div id="event-1-fields" class="event-fields"></div>
+            </div>
+            <div class="form-group-button">
+            <button type="button" class="prev-step">Back</button>
+            <button type="button" class="next-step">CONTINUE</button>
+            </div>
         </div>
         <div class="step step-3">
-            <h2 class="rsvp__label">WEDDING DAY</h2>
+            <p class="title--16" style="letter-spacing: 8px; margin-bottom: 7px">FIESTA BIENVENIDA</p>
+            <div class="text-center step-img">
+                <img src="<?php echo IMG_BASE . 'welcome-party.svg'?>" alt="">
+            </div>
+            <p class="title--16">March 7th, 2025</p>
+            <p class="title--16">Barco Phantom</p>
+            <p class="title--16" style="margin-bottom: 50px">5:00 P.M.</p>
+
             <div class="form-group__full">
             <div id="event-2-fields" class="event-fields"></div>
             </div>
             <div class="form-group-button">
             <button type="button" class="prev-step">Back</button>
-            <button type="button" class="next-step">Next</button>
-            </div>
-        </div>
-        <div class="step step-4">
-            <h2 class="rsvp__label">WELCOME PHANTOM PARTY</h2>
-            <div class="form-group__full">
-            <div id="event-3-fields" class="event-fields"></div>
-            </div>
-            <div class="form-group-button">
-            <button type="button" class="prev-step">Back</button>
-            <button type="button" class="next-step">Next</button>
+            <button type="button" class="next-step">CONTINUE</button>
             </div>
 
         </div>
-        <div class="step step-5">
+        <div class="step step-4">
             <h2 class="rsvp__label">Additional Information</h2>
             <label for="arrival_date">WHAT IS YOUR ARRIVALS DATE?</label>
             <input type="text" name="arrival_date" id="arrival_date">
@@ -102,7 +123,7 @@ function display_rsvp_form() {
             <label for="food_restrictions">TELL US IF YOU HAVE ANY FOOD ALLERGIES OR RESTRICTIONS</label>
             <input type="text" name="food_restrictions" id="food_restrictions">
             
-            <label for="email">Email</label>
+            <label for="email">E-MAIL ADDRESS</label>
             <input type="email" name="email" id="email">
             
             <div class="form-group-button">
@@ -167,6 +188,7 @@ function fetch_guest_info() {
         $nombre = sanitize_text_field($_POST['nombre']);
         
         $guest_list = array(
+            'daniel' => array('daniel'),
             'Rodrigo Bravo' => array('Rodrigo Bravo', 'Megan Opazo'),
             'Yolanda Vasquez' => array('Yolanda Vasquez'),
             'Patricia Carhuatocto' => array('Patricia Carhuatocto'),
