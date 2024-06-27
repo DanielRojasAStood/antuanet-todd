@@ -142,18 +142,35 @@ function process_rsvp_form() {
 
         // Preparar el mensaje para el usuario
         $user_subject = 'RSVP Confirmation for ' . $nombre;
-        $user_message = "Estimado/a $nombre,\n\n";
-        $user_message .= "Gracias por completar su RSVP. A continuación se muestra un resumen de la información proporcionada:\n\n";
+
+        $user_message = "
+        <html>
+        <head>
+            <style>
+                body { font-family: Arial, sans-serif; }
+                .event-title { font-weight: bold; color: #000; }
+                li {list-style: none;}
+            </style>
+        </head>
+        <body>
+            <img src='https://antuanetytoddwedding.com/wp-content/uploads/2024/06/confirmation.png' alt='confirmation' style='width: 1365px; height: auto;'>
+            <h2>Dear $nombre Invitado,</h2>
+            <p>We are happy to inform you that we have received your RSVP for our wedding</p>
+            <p>We are excited that you will be able to join us on this special day!</p>
+            <p><strong>Full Name</strong></p>
+            <p>$nombre</p>
+            <ul style='padding: 0;'>";
 
         foreach ($_POST as $key => $value) {
-            if ($key != 'action') {
-                $user_message .= ucfirst(str_replace('_', ' ', $key)) . ': ' . $value . "\n";
+            if ($key != 'action' && $key != 'nombre' && $key != 'email') {
+                $event_name = ucfirst(str_replace('_', ' ', $key));
+                $user_message .= "<li><span class='event-title'>$event_name:</span> <br> $value </li>";
             }
         }
 
-        $user_message .= "\nSi necesita hacer algún cambio, por favor contáctenos.\n\n";
-        $user_message .= "¡Esperamos verle pronto!\n";
-        $user_message .= "El equipo organizador";
+        $user_message .= "<p style='margin-top: 50px'>Thank you for being part of this important moment for us.</p>";
+        $user_message .= "<p>See you soon to celebrate together</p>";
+        $user_message .= "<strong>With love, Antuanet & Todd</strong>";
 
         // Preparar el mensaje para el administrador
         $admin_subject = "Nuevo RSVP de $nombre";
@@ -165,11 +182,14 @@ function process_rsvp_form() {
             }
         }
 
+        // Configurar los headers para enviar correo HTML
+        $headers = array('Content-Type: text/html; charset=UTF-8');
+
         // Enviar correo al administrador
         wp_mail($admin_email, $admin_subject, $admin_message);
 
-        // Enviar correo a la persona que llenó el formulario
-        wp_mail($email, $user_subject, $user_message);
+        // Enviar correo HTML a la persona que llenó el formulario
+        wp_mail($email, $user_subject, $user_message, $headers);
 
         wp_redirect(home_url('/thank-you'));
         exit;
