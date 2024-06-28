@@ -188,7 +188,7 @@ function process_rsvp_form() {
         );
 
         // Enviar correo al administrador
-        wp_mail($admin_email, $admin_subject, $admin_message);
+        wp_mail($admin_email, $admin_subject, $admin_message, $headers);
 
         // Enviar correo HTML a la persona que llenó el formulario
         wp_mail($email, $user_subject, $user_message, $headers);

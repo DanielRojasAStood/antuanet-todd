@@ -317,8 +317,7 @@ get_header();
         </p>
 
         <div class="text-center m-b40">
-          <p class="title-18 m-b8">Kindly respond by JUNE 15th, 2024</p>
-          <p class="title-16">Por favor confirmar asistencia antes de JUNIO 15, 2024</p>
+          <p class="title-18 m-b8">Please confirm your attendance, fill out the following form by clicking on the button below.</p>
         </div>
         <div class="form-group-button">
           <button type="button" data-open-modal="modal-4">R.S.V.P</button>
