@@ -75,8 +75,8 @@ function display_rsvp_form() {
         <div class="step step-2">
             <p class="title-26" style="margin-bottom: 7px">CEREMONY</p>
             <p class="title--16 font-poppins text-left">March 8th, 2025</p>
-            <p class="title--16 font-poppins text-left">Baluarte San Ignacio</p>
-            <p class="title--16 font-poppins text-left" style="margin-bottom: 20px">7:00 P.M.</p>
+            <p class="title--16 font-poppins text-left m-b30">Baluarte San Ignacio</p>
+            <!-- <p class="title--16 font-poppins text-left" style="margin-bottom: 20px">7:00 P.M.</p> -->
 
             <div class="form-group__full">
             <div id="event-1-fields" class="event-fields"></div>
@@ -90,7 +90,7 @@ function display_rsvp_form() {
             <p class="title-26" style="margin-bottom: 7px">RECEPTION</p>
             <p class="title--16 font-poppins text-left">March 8th, 2025</p>
             <p class="title--16 font-poppins text-left">Hotel Charleston Santa Teresa <br> Following the ceremony</p>
-            <p class="title--16 font-poppins text-left" style="margin-bottom: 20px">7:00 P.M.</p>
+            <p class="title--16 font-poppins text-left m-b30" style="margin-bottom: 20px">7:00 P.M.</p>
 
             <div class="form-group__full">
             <div id="event-2-fields" class="event-fields"></div>
@@ -103,7 +103,7 @@ function display_rsvp_form() {
         <div class="step step-4">
             <p class="title-26" style="margin-bottom: 7px">WELCOME PHANTOM PARTY</p>
             <p class="title--16 font-poppins text-left">March 7th, 2025</p>
-            <p class="title--16 font-poppins text-left">Barco Phantom <br> 5:00 P.M.</p>
+            <p class="title--16 font-poppins text-left m-b30">Barco Phantom <br> 5:00 P.M.</p>
 
             <div class="form-group__full">
             <div id="event-3-fields" class="event-fields"></div>
@@ -115,8 +115,8 @@ function display_rsvp_form() {
         </div>
         <div class="step step-5">
             <p class="title-26" style="margin-bottom: 7px">ADDITIONAL INFO</p>
-            <p class="title--16 font-poppins text-left">Tell us if you have any food <br> allergies or restrictions</p>
-            <textarea name="arrival_date" id="arrival_date" rows="3" cols="50"></textarea>
+            <p class="title--16 font-poppins text-left">Tell us if you have any food allergies or restrictions</p>
+            <textarea name="food_allergies_or_restrictions" id="food_allergies_or_restrictions" rows="3" cols="50"></textarea>
             
             <label for="email">Email address</label>
             <input type="email" name="email" id="email">
@@ -148,7 +148,6 @@ function process_rsvp_form() {
         <head>
             <style>
                 body { font-family: Arial, sans-serif; }
-                .event-title { font-weight: bold; color: #000; }
                 li {list-style: none;}
             </style>
         </head>
@@ -157,14 +156,14 @@ function process_rsvp_form() {
             <h2>Dear $nombre</h2>
             <p>We are happy to inform you that we have received your RSVP for our wedding</p>
             <p>We are excited that you will be able to join us on this special day!</p>
-            <p><strong>Full Name</strong></p>
-            <p>$nombre</p>
+            <p style='margin: 0 0 10px'><strong>Full Name</strong></p>
+            <p style='margin: 0 0 20px;display: inline-block;'>$nombre</p>
             <ul style='padding: 0;'>";
 
         foreach ($_POST as $key => $value) {
             if ($key != 'action' && $key != 'nombre' && $key != 'email') {
                 $event_name = ucfirst(str_replace('_', ' ', $key));
-                $user_message .= "<li><span class='event-title'>$event_name</span>:<br> $nombre<br> $value </li>";
+                $user_message .= "<li><span>$event_name: <strong style='margin-bottom: 20px; display: inline-block;'>$value</strong></span> </li>";
             }
         }
 

@@ -163,6 +163,10 @@ body {
     }
   }
 
+  &-b30 {
+    margin-bottom: 30px;
+  }
+
   &-b20 {
     margin-bottom: 20px;
   }
@@ -323,7 +327,7 @@ body {
     letter-spacing: 13px;
 
     @media only screen and (min-width: 1024px) {
-      font-size: var(--26);
+      font-size: 25px;
     }
   }
 
@@ -1857,6 +1861,7 @@ input[type="radio"]:checked + span span {
   height: 100%;
   z-index: 1;
   color: var(--FFF);
+  font-size: var(--14);
 }
 
 input[type="checkbox"] + span span,
@@ -1886,11 +1891,11 @@ input[type="radio"] + span span {
   padding-left: 0;
   cursor: pointer;
   width: 100%;
-  height: 50px;
+  height: 40px;
   color: #fff;
 
   @media only screen and (min-width: 1024px) {
-    width: 200px;
+    width: 115px;
   }
 }
 
@@ -1908,7 +1913,7 @@ input[type="radio"] + span span {
   border: 0;
   margin-top: 40px;
   min-width: 200px;
-  padding: 15px 35px;
+  padding: 12px 35px 11px 35px;
   color: var(--FFF);
   font-size: var(--10);
   font-weight: 400;
@@ -2285,13 +2290,14 @@ input {
 }
 
 .event-fields {
-  display: grid;
+  display: grig;
   grid-template-columns: 1fr;
   align-items: center;
   row-gap: 5px;
 
   @media only screen and (min-width: 1024px) {
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -2299,6 +2305,15 @@ input {
   padding-bottom: 50px;
   img {
     height: 100%;
+  }
+
+  &.section-8 {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    position: fixed;
+
+    
   }
 
   .section-8__copy {
@@ -2345,6 +2360,14 @@ input {
   }
 }
 
+.modal-rsvp {
+  background-color: var(--FFF);
+
+  .modal__wrapper {
+    max-width: 580px;
+  }
+}
+
 .modal-rsvp .modal__body {
   display: flex;
   justify-content: center;
@@ -2386,7 +2409,7 @@ input {
   height: auto;
 
   @media only screen and (min-width: 1024px) {
-    width: 330px !important;
+    width: 100% !important;
   }
 }
 
@@ -2466,5 +2489,16 @@ form {
 
   @media only screen and (min-width: 1024px) {
     padding-top: 0;
+  }
+}
+
+.section-8__flower {
+  position: absolute;
+  top: 0;
+  width: 300px;
+  height: auto !important;
+
+  @media only screen and (min-width: 1024px) {
+    width: 600px;
   }
 }

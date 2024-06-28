@@ -74,9 +74,9 @@ function validateName() {
         var guests = response.data.guests;
         var events = [
           // "ARE YOU ATTENDING?",
-          "Ceremony",
-          "Reception",
-          "Welcome Phantom Party",
+          "<strong>CEREMONY</strong> <br>",
+          "<strong>RECEPTION</strong> <br>",
+          "<strong>WELCOME PHANTOM PARTY</strong> <br>",
         ];
         var fields = ["event-1-fields", "event-2-fields", "event-3-fields", "event-4-fields"];
 
@@ -90,7 +90,7 @@ function validateName() {
                   <span class="wpcf7-form-control">
                     <span class="wpcf7-list-item">
                       <label>
-                        <input type="radio" name="${event}_${guest}" value="Accept" required checked="checked"> 
+                        <input type="radio" name="${event}_${guest}" value="ACCEPT" required checked="checked"> 
                         <span class="wpcf7-list-item-label">
                           <span class="text-14">Accept</span>
                         </span>
@@ -99,7 +99,7 @@ function validateName() {
                   </span>
                   <span class="wpcf7-list-item">
                       <label>
-                        <input type="radio" name="${event}_${guest}" value="Decline" required> 
+                        <input type="radio" name="${event}_${guest}" value="DECLINE" required> 
                         <span class="wpcf7-list-item-label">
                           <span>Decline</span>
                         </span>
