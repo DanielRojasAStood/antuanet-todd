@@ -58,30 +58,25 @@ function display_rsvp_form() {
     <form id="rsvp-form" method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
     
         <div class="step step-1">
-        <p class="title-56 text-center m-b20">
-        R.S.V.P.
+        <p class="title-26 m-b20">
+        ANTUANET & TODD´S WEDDING
         </p>
 
         <div class="text-center m-b40">
-          <p class="title-18 m-b8">Kindly respond by JUNE 15th, 2024</p>
-          <p class="title-16">Por favor confirmar asistencia antes de JUNIO 15, 2024</p>
+          <p class="title-16 font-poppins text-left">If you’re responding for you and a guest (or your family), you’ll be able to RSVP for your entire group.</p>
+          <p class="title-16 font-poppins text-left">Please enter below your First Name and your Last Name.</p>
         </div>
-            <h2 class="rsvp__label" style="margin-bottom: 10px">ENTER FULL NAME</h2>
-            <input type="text" name="nombre" id="nombre" required placeholder="Nombre Completo">
+            <h2 class="title--16 font-poppins text-left" style="margin-bottom: 10px">FULL NAME</h2>
+            <input type="text" name="nombre" id="nombre" required placeholder="">
             <div class="form-group-button">
                 <button type="button" class="next-step">FIND YOUR INVITATION</button>
             </div>
         </div>
         <div class="step step-2">
-            <p class="title--16" style="letter-spacing: 8px">NUESTRA BODA</p>
-            <p class="title--18" style="margin-bottom: 7px">CEREMONY</p>
-            <p class="title--16">March 8th, 2025</p>
-            <p class="title--16">Baluarte San Ignacio</p>
-            <p class="title--16" style="margin-bottom: 20px">7:00 P.M.</p>
-
-            <p class="title--18" style="margin-bottom: 7px">RECEPTION</p>
-            <p class="title--16">Hotel Charleston</p>
-            <p class="title--16" style="margin-bottom: 30px">Santa Teresa</p>
+            <p class="title-26" style="margin-bottom: 7px">CEREMONY</p>
+            <p class="title--16 font-poppins text-left">March 8th, 2025</p>
+            <p class="title--16 font-poppins text-left">Baluarte San Ignacio</p>
+            <p class="title--16 font-poppins text-left" style="margin-bottom: 20px">7:00 P.M.</p>
 
             <div class="form-group__full">
             <div id="event-1-fields" class="event-fields"></div>
@@ -92,11 +87,10 @@ function display_rsvp_form() {
             </div>
         </div>
         <div class="step step-3">
-            <p class="title--16" style="letter-spacing: 8px; margin-bottom: 7px">FIESTA BIENVENIDA</p>
-            <p class="title--18" style="margin-bottom: 7px">WELCOME PHANTOM PARTY</p>
-            <p class="title--16">March 7th, 2025</p>
-            <p class="title--16">Barco Phantom</p>
-            <p class="title--16" style="margin-bottom: 50px">5:00 P.M.</p>
+            <p class="title-26" style="margin-bottom: 7px">RECEPTION</p>
+            <p class="title--16 font-poppins text-left">March 8th, 2025</p>
+            <p class="title--16 font-poppins text-left">Hotel Charleston Santa Teresa <br> Following the ceremony</p>
+            <p class="title--16 font-poppins text-left" style="margin-bottom: 20px">7:00 P.M.</p>
 
             <div class="form-group__full">
             <div id="event-2-fields" class="event-fields"></div>
@@ -105,20 +99,26 @@ function display_rsvp_form() {
             <button type="button" class="prev-step">Back</button>
             <button type="button" class="next-step">CONTINUE</button>
             </div>
-
         </div>
         <div class="step step-4">
-            <p class="title-56 text-center m-b20">
-                R.S.V.P.
-            </p>
-            <h2 class="rsvp__label" style="margin-bottom: 20px">ADDITIONAL INFORMATION</h2>
-            <label for="arrival_date">WHAT IS YOUR ARRIVALS DATE?</label>
-            <input type="date" name="arrival_date" id="arrival_date">
+            <p class="title-26" style="margin-bottom: 7px">WELCOME PHANTOM PARTY</p>
+            <p class="title--16 font-poppins text-left">March 7th, 2025</p>
+            <p class="title--16 font-poppins text-left">Barco Phantom <br> 5:00 P.M.</p>
+
+            <div class="form-group__full">
+            <div id="event-3-fields" class="event-fields"></div>
+            </div>
+            <div class="form-group-button">
+            <button type="button" class="prev-step">Back</button>
+            <button type="button" class="next-step">CONTINUE</button>
+            </div>
+        </div>
+        <div class="step step-5">
+            <p class="title-26" style="margin-bottom: 7px">ADDITIONAL INFO</p>
+            <p class="title--16 font-poppins text-left">Tell us if you have any food <br> allergies or restrictions</p>
+            <textarea name="arrival_date" id="arrival_date" rows="3" cols="50"></textarea>
             
-            <label for="food_restrictions">TELL US IF YOU HAVE ANY FOOD ALLERGIES OR RESTRICTIONS</label>
-            <input type="text" name="food_restrictions" id="food_restrictions">
-            
-            <label for="email">E-MAIL ADDRESS</label>
+            <label for="email">Email address</label>
             <input type="email" name="email" id="email">
             
             <div class="form-group-button">
@@ -154,7 +154,7 @@ function process_rsvp_form() {
         </head>
         <body>
             <img src='https://antuanetytoddwedding.com/wp-content/uploads/2024/06/confirmation.png' alt='confirmation' style='width: 1365px; height: auto;'>
-            <h2>Dear $nombre Invitado,</h2>
+            <h2>Dear $nombre</h2>
             <p>We are happy to inform you that we have received your RSVP for our wedding</p>
             <p>We are excited that you will be able to join us on this special day!</p>
             <p><strong>Full Name</strong></p>
@@ -164,7 +164,7 @@ function process_rsvp_form() {
         foreach ($_POST as $key => $value) {
             if ($key != 'action' && $key != 'nombre' && $key != 'email') {
                 $event_name = ucfirst(str_replace('_', ' ', $key));
-                $user_message .= "<li><span class='event-title'>$event_name:</span> <br> $value </li>";
+                $user_message .= "<li><span class='event-title'>$event_name</span>:<br> $nombre<br> $value </li>";
             }
         }
 
@@ -183,7 +183,10 @@ function process_rsvp_form() {
         }
 
         // Configurar los headers para enviar correo HTML
-        $headers = array('Content-Type: text/html; charset=UTF-8');
+        $headers = array(
+            'Content-Type: text/html; charset=UTF-8',
+            'From: Antuanet & Todd’s Wedding <rsvp@antuanetytoddwedding.com> ' // Ajusta esto con tu dirección y nombre de remitente personalizado
+        );
 
         // Enviar correo al administrador
         wp_mail($admin_email, $admin_subject, $admin_message);
@@ -198,11 +201,13 @@ function process_rsvp_form() {
 add_action('admin_post_nopriv_submit_rsvp_form', 'process_rsvp_form');
 add_action('admin_post_submit_rsvp_form', 'process_rsvp_form');
 
+
 function fetch_guest_info() {
     if (isset($_POST['nombre'])) {
         $nombre = sanitize_text_field($_POST['nombre']);
         
         $guest_list = array(
+            'daniel' => array('daniel'),
             'Rodrigo Bravo' => array('Rodrigo Bravo', 'Megan Opazo'),
             'Yolanda Vasquez' => array('Yolanda Vasquez'),
             'Patricia Carhuatocto' => array('Patricia Carhuatocto'),

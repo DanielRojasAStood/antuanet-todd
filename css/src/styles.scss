@@ -355,6 +355,18 @@ body {
     line-height: normal;
   }
 
+  &-14 {
+    font-family: var(--font-poppins);
+    font-size: var(--14);
+    color: var(--fff);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px; /* 271.429% */
+    letter-spacing: 1.4px;
+  }
+
   &-13 {
     color: var(--4A4A49);
     font-size: var(--13);
@@ -439,6 +451,15 @@ body {
 /* Align */
 .text-center {
   text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+  font-weight: 400;
 }
 
 /* Header */
@@ -1732,8 +1753,9 @@ body {
 [type="email"],
 [type="number"],
 select,
-[type="date"] {
-  font-family: var(--font-hatton);
+[type="date"],
+textarea {
+  font-family: var(--font-poppins);
   width: 100%;
   height: 40px;
   padding: 0 10px;
@@ -1749,11 +1771,12 @@ select,
 }
 
 textarea {
-  font-family: inherit;
+  font-family: var(--font-poppins);
   width: 100%;
+  height: auto;
   margin-top: 5px;
   padding: 20px;
-  border: 0;
+  border: 1px solid var(--3060A9);
 }
 
 .form-group__full {
@@ -2157,26 +2180,35 @@ input[type="radio"] + span span {
   font-size: 12px;
 }
 
-.event-fields p {
-  text-align: center;
-  margin: 20px 0 10px;
+.event-fields {
+  p {
+    text-align: center;
+    margin: 20px 0 10px;
 
-  @media only screen and (min-width: 1024px) {
-    text-align: left;
-    margin: 0 0 10px;
+    @media only screen and (min-width: 1024px) {
+      text-align: left;
+      margin: 0 0 10px;
+    }
+  }
+
+  .title-20 {
+    line-height: normal;
   }
 }
 
 label {
   display: block;
+  font-family: var(--font-poppins);
   margin-bottom: 10px;
   font-size: 12px;
   line-height: normal;
   text-align: left;
+  color: var(--000);
 
   @media only screen and (min-width: 1024px) {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: var(--16);
+    line-height: 24px;
   }
 }
 
@@ -2275,12 +2307,12 @@ input {
   }
 
   a {
+    font-family: var(--font-poppins);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--957711);
     text-align: center;
-    font-family: var(--font-hatton);
     font-size: var(--14);
     font-style: normal;
     font-weight: 500;
@@ -2319,16 +2351,25 @@ input {
   align-items: center;
   background: #fff;
   min-width: min-content;
-  max-width: 750px;
+  max-width: 580px;
   padding: 40px 20px;
   overflow: auto;
   height: auto;
-  
+
+  .title-26 {
+    letter-spacing: 5.2px;
+  }
+
   @media only screen and (min-width: 1024px) {
     display: grid;
     place-content: center;
     padding: 40px 40px;
+    text-align: left;
     height: 97vh;
+
+    .title-26 {
+      letter-spacing: 5.2px;
+    }
   }
 }
 
@@ -2338,6 +2379,7 @@ input {
 
 .modal-rsvp .form-group-button button {
   position: relative;
+  font-family: var(--font-poppins);
   top: 0;
   right: 0;
   width: 100% !important;
@@ -2363,7 +2405,7 @@ input {
     &-16 {
       font-size: var(--14);
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 20px;
 
       @media only screen and (min-width: 1024px) {

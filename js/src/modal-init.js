@@ -74,24 +74,25 @@ function validateName() {
         var guests = response.data.guests;
         var events = [
           // "ARE YOU ATTENDING?",
-          "Wedding Day",
-          "Welcome Party",
+          "Ceremony",
+          "Reception",
+          "Welcome Phantom Party",
         ];
-        var fields = ["event-1-fields", "event-2-fields", "event-3-fields"];
+        var fields = ["event-1-fields", "event-2-fields", "event-3-fields", "event-4-fields"];
 
         events.forEach(function (event, index) {
           var eventFields = $("#" + fields[index]);
           eventFields.empty();
           guests.forEach(function (guest) {
             eventFields.append(
-              `<p class="title-18">${guest}</p>
+              `<p class="title-18 font-poppins">${guest}</p>
                <span class="wpcf7-form-control-wrap">
                   <span class="wpcf7-form-control">
                     <span class="wpcf7-list-item">
                       <label>
                         <input type="radio" name="${event}_${guest}" value="Accept" required checked="checked"> 
                         <span class="wpcf7-list-item-label">
-                          <span>Accept</span>
+                          <span class="text-14">Accept</span>
                         </span>
                     </label>
                     </span>

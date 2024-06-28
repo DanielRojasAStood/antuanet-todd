@@ -9,13 +9,10 @@
 
     <div class="section-8__copy" style="margin-top: 100px">
       <div>
-        <p class="title-56 text-center m-b20">
-        R.S.V.P.
-        </p>
+        <p class="title-26" style="margin-bottom: 7px">THANKS</p>
 
-        <div class="text-center m-b40">
-          <p class="title-16" style="margin-bottom: 30px">Thank you for confirming your attendance to our wedding. We are very happy to share this special day with you. We will send a copy of your RSVP to your email.</p>
-          <p class="title-16">Gracias por confirmar su asistencia a nuestra boda. Nos alegra mucho poder compartir este día especial con ustedes. Les enviaremos una copia de su confirmación a su correo.</p>
+        <div class="text-left m-b40">
+          <p class="title-16 font-poppins">Thank you for confirming your attendance to our wedding. We are very happy to share this special day with you. We will send a copy of your RSVP to your email.</p>
 
           <a href="/">BACK TO HOME</a>
         </div>
