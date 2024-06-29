@@ -167,13 +167,33 @@ function process_rsvp_form() {
             }
         }
 
+        $admin_message = "
+        <html>
+        <head>
+            <style>
+                body { font-family: Arial, sans-serif; }
+                li {list-style: none;}
+            </style>
+        </head>
+        <body>
+            <p style='margin: 0 0 10px'><strong>Full Name</strong></p>
+            <p style='margin: 0 0 20px;display: inline-block;'>$nombre</p>
+            <ul style='padding: 0;'>";
+
+        foreach ($_POST as $key => $value) {
+            if ($key != 'action' && $key != 'nombre' && $key != 'email') {
+                $event_name = ucfirst(str_replace('_', ' ', $key));
+                $user_message .= "<li><span>$event_name: <strong style='margin-bottom: 20px; display: inline-block;'>$value</strong></span> </li>";
+            }
+        }
+
         $user_message .= "<p style='margin-top: 50px'>Thank you for being part of this important moment for us.</p>";
         $user_message .= "<p>See you soon to celebrate together</p>";
         $user_message .= "<strong>With love, Antuanet & Todd</strong>";
 
         // Preparar el mensaje para el administrador
         $admin_subject = "Nuevo RSVP de $nombre";
-        $admin_message = "Se ha recibido un nuevo RSVP del usuario:\n\n";
+        $admin_message = "Se ha recibido un nuevo RSVP del usuario: <br>";
         
         foreach ($_POST as $key => $value) {
             if ($key != 'action') {
