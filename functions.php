@@ -138,7 +138,7 @@ function process_rsvp_form() {
         $email = sanitize_email($_POST['email']);
 
         // Correo del administrador
-        $admin_email = 'rsvpnew@eduardoyanamaria.com';
+        $admin_email = 'rsvp@eduardoyanamaria.com';
 
         // Preparar el mensaje para el usuario
         $user_subject = 'RSVP Confirmation for ' . $nombre;
@@ -152,7 +152,7 @@ function process_rsvp_form() {
             </style>
         </head>
         <body>
-            <img src='https://antuanetytoddwedding.com/wp-content/uploads/2024/06/confirmation.png' alt='confirmation' style='width: 1365px; height: auto;'>
+            <img src='https://antuanetytoddwedding.com/wp-content/uploads/2024/06/confirmation.png' alt='confirmation' style='width: 100%; height: auto;'>
             <h2>Dear $nombre</h2>
             <p>We are happy to inform you that we have received your RSVP for our wedding</p>
             <p>We are excited that you will be able to join us on this special day!</p>
@@ -182,16 +182,21 @@ function process_rsvp_form() {
         }
 
         // Configurar los headers para enviar correo HTML
-        $headers = array(
+        $headers_admin = array(
             'Content-Type: text/html; charset=UTF-8',
-            'From: Antuanet & Todd’s Wedding <rsvpnew@eduardoyanamaria.com> ' // Ajusta esto con tu dirección y nombre de remitente personalizado
+            'From: Antuanet & Todd’s Wedding <rsvpnew@eduardoyanamaria.com>'
+        );
+
+        $headers_user = array(
+            'Content-Type: text/html; charset=UTF-8',
+            'From: Antuanet & Todd’s Wedding <rsvpnew@eduardoyanamaria.com>'
         );
 
         // Enviar correo al administrador
-        wp_mail($admin_email, $admin_subject, $admin_message, $headers);
+        wp_mail($admin_email, $admin_subject, $admin_message, $headers_admin);
 
         // Enviar correo HTML a la persona que llenó el formulario
-        wp_mail($email, $user_subject, $user_message, $headers);
+        wp_mail($email, $user_subject, $user_message, $headers_user);
 
         wp_redirect(home_url('/thank-you'));
         exit;
@@ -199,6 +204,7 @@ function process_rsvp_form() {
 }
 add_action('admin_post_nopriv_submit_rsvp_form', 'process_rsvp_form');
 add_action('admin_post_submit_rsvp_form', 'process_rsvp_form');
+
 
 
 function fetch_guest_info() {
