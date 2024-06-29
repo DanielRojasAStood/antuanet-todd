@@ -184,12 +184,12 @@ function process_rsvp_form() {
         // Configurar los headers para enviar correo HTML
         $headers_admin = array(
             'Content-Type: text/html; charset=UTF-8',
-            'From: Antuanet & Todd’s Wedding <rsvpnew@eduardoyanamaria.com>'
+            'From: Antuanet & Todd’s Wedding <rsvp@eduardoyanamaria.com>'
         );
 
         $headers_user = array(
             'Content-Type: text/html; charset=UTF-8',
-            'From: Antuanet & Todd’s Wedding <rsvpnew@eduardoyanamaria.com>'
+            'From: Antuanet & Todd’s Wedding <rsvp@eduardoyanamaria.com>'
         );
 
         // Enviar correo al administrador
