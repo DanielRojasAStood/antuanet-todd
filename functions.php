@@ -138,7 +138,7 @@ function process_rsvp_form() {
         $email = sanitize_email($_POST['email']);
 
         // Correo del administrador
-        $admin_email = 'rsvp@eduardoyanamaria.com';
+        $admin_email = 'rsvp@antuanetytoddwedding.com';
 
         // Preparar el mensaje para el usuario
         $user_subject = 'RSVP Confirmation for ' . $nombre;
@@ -184,12 +184,12 @@ function process_rsvp_form() {
         // Configurar los headers para enviar correo HTML
         $headers_admin = array(
             'Content-Type: text/html; charset=UTF-8',
-            'From: Antuanet & Todd’s Wedding <rsvp@eduardoyanamaria.com>'
+            'From: Antuanet & Todd’s Wedding <rsvp@antuanetytoddwedding.com>'
         );
 
         $headers_user = array(
             'Content-Type: text/html; charset=UTF-8',
-            'From: Antuanet & Todd’s Wedding <rsvp@eduardoyanamaria.com>'
+            'From: Antuanet & Todd’s Wedding <rsvp@antuanetytoddwedding.com>'
         );
 
         // Enviar correo al administrador
