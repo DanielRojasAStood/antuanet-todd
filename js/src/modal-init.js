@@ -74,9 +74,9 @@ function validateName() {
         var guests = response.data.guests;
         var events = [
           // "ARE YOU ATTENDING?",
+          "<strong>WELCOME PHANTOM PARTY</strong> <br>",
           "<strong>CEREMONY</strong> <br>",
           "<strong>RECEPTION</strong> <br>",
-          "<strong>WELCOME PHANTOM PARTY</strong> <br>",
         ];
         var fields = ["event-1-fields", "event-2-fields", "event-3-fields", "event-4-fields"];
 

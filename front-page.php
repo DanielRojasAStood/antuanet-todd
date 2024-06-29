@@ -23,7 +23,7 @@ get_header();
     <img class="section-2__bckg" src="<?php echo IMG_BASE . 'bg-two.webp' ?>" alt="">
     <img class="section-2__bckg-two" src="<?php echo IMG_BASE . 'home-mobile-wedding-mobile.png' ?>" alt="">
     <div class="section-2__copy">
-      <p class="title-26 m-b8">NUESTRA BODA</p>
+      <!-- <p class="title-26 m-b8">NUESTRA BODA</p> -->
       <img class="m-b40" src="<?php echo IMG_BASE . 'text-our-wedding.svg' ?>" alt="">
       <p class="title-24 m-b13">CEREMONY</p>
       <p class="title-30">March 8th, 2025</p>
@@ -44,7 +44,7 @@ get_header();
 
   <section class="section-2 section-reverse">
     <div class="section-2__copy">
-      <p class="title-26 m-b8">FIESTA BIENVENIDA</p>
+      <!-- <p class="title-26 m-b8">FIESTA BIENVENIDA</p> -->
       <img class="m-b40" src="<?php echo IMG_BASE . 'text-phantom-party.svg' ?>" alt="">
       <p class="title-30">March 7th, 2025</p>
       <p class="title-32 m-b13" style="">4:30 P.M.</p>

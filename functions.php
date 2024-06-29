@@ -73,9 +73,9 @@ function display_rsvp_form() {
             </div>
         </div>
         <div class="step step-2">
-            <p class="title-26" style="margin-bottom: 7px">CEREMONY</p>
-            <p class="title--16 font-poppins text-left">March 8th, 2025</p>
-            <p class="title--16 font-poppins text-left m-b30">Baluarte San Ignacio</p>
+            <p class="title-26" style="margin-bottom: 7px">WELCOME PHANTOM PARTY</p>
+            <p class="title--16 font-poppins text-left">March 7th, 2025</p>
+            <p class="title--16 font-poppins text-left m-b30">Barco Phantom <br> 5:00 P.M.</p>
             <!-- <p class="title--16 font-poppins text-left" style="margin-bottom: 20px">7:00 P.M.</p> -->
 
             <div class="form-group__full">
@@ -87,10 +87,9 @@ function display_rsvp_form() {
             </div>
         </div>
         <div class="step step-3">
-            <p class="title-26" style="margin-bottom: 7px">RECEPTION</p>
+        <p class="title-26" style="margin-bottom: 7px">CEREMONY</p>
             <p class="title--16 font-poppins text-left">March 8th, 2025</p>
-            <p class="title--16 font-poppins text-left">Hotel Charleston Santa Teresa <br> Following the ceremony</p>
-            <p class="title--16 font-poppins text-left m-b30" style="margin-bottom: 20px">7:00 P.M.</p>
+            <p class="title--16 font-poppins text-left m-b30">Baluarte San Ignacio</p>
 
             <div class="form-group__full">
             <div id="event-2-fields" class="event-fields"></div>
@@ -101,9 +100,10 @@ function display_rsvp_form() {
             </div>
         </div>
         <div class="step step-4">
-            <p class="title-26" style="margin-bottom: 7px">WELCOME PHANTOM PARTY</p>
-            <p class="title--16 font-poppins text-left">March 7th, 2025</p>
-            <p class="title--16 font-poppins text-left m-b30">Barco Phantom <br> 5:00 P.M.</p>
+            <p class="title-26" style="margin-bottom: 7px">RECEPTION</p>
+            <p class="title--16 font-poppins text-left">March 8th, 2025</p>
+            <p class="title--16 font-poppins text-left">Hotel Charleston Santa Teresa <br> Following the ceremony</p>
+            <p class="title--16 font-poppins text-left m-b30" style="margin-bottom: 20px">7:00 P.M.</p>
 
             <div class="form-group__full">
             <div id="event-3-fields" class="event-fields"></div>
@@ -138,7 +138,7 @@ function process_rsvp_form() {
         $email = sanitize_email($_POST['email']);
 
         // Correo del administrador
-        $admin_email = 'rsvp@antuanetytoddwedding.com';
+        $admin_email = 'rsvpnew@eduardoyanamaria.com';
 
         // Preparar el mensaje para el usuario
         $user_subject = 'RSVP Confirmation for ' . $nombre;
@@ -184,7 +184,7 @@ function process_rsvp_form() {
         // Configurar los headers para enviar correo HTML
         $headers = array(
             'Content-Type: text/html; charset=UTF-8',
-            'From: Antuanet & Todd’s Wedding <rsvp@antuanetytoddwedding.com> ' // Ajusta esto con tu dirección y nombre de remitente personalizado
+            'From: Antuanet & Todd’s Wedding <rsvpnew@eduardoyanamaria.com> ' // Ajusta esto con tu dirección y nombre de remitente personalizado
         );
 
         // Enviar correo al administrador
