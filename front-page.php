@@ -321,8 +321,7 @@ get_header();
         </div>
         <div class="form-group-button">
           <button type="button" data-open-modal="modal-4">R.S.V.P</button>
-        </div>
-          
+        </div>  
       </div>
     </div>
   </section>
@@ -475,6 +474,8 @@ get_header();
         </div>
       </div>
     </section>
+
+    <div class="g-recaptcha" data-sitekey="6Le3kB0qAAAAAKDMx2PP0dS8gZQ8VVWz6QvSPPqE"></div>
     
   </main>
 </body>

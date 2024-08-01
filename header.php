@@ -35,7 +35,6 @@
   <!-- wordpress header includes -->
   <?php wp_head(); ?>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <div class="g-recaptcha" data-sitekey="6Le3kB0qAAAAAKDMx2PP0dS8gZQ8VVWz6QvSPPqE"></div>
 
   <script>
     function onSubmit(token) {
