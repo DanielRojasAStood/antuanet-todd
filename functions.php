@@ -124,6 +124,7 @@ function display_rsvp_form() {
             <div class="form-group-button">
             <button type="button" class="prev-step">Back</button>
             <button type="submit" 
+                class="g-recaptcha" 
                 data-sitekey="6Le3kB0qAAAAAKDMx2PP0dS8gZQ8VVWz6QvSPPqE"
                 data-callback='onSubmit'
                 data-action='submit'
@@ -131,7 +132,14 @@ function display_rsvp_form() {
             </div>
         </div>
         <input type="hidden" name="action" value="submit_rsvp_form">
+        <?php wp_nonce_field('submit_rsvp_form', 'rsvp_nonce'); ?>
     </form>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("rsvp-form").submit();
+        }
+    </script>
     <?php
 }
 add_shortcode('rsvp_form', 'display_rsvp_form');
@@ -151,7 +159,7 @@ function process_rsvp_form() {
         wp_die('Security check failed.');
     }
 
-    $recaptcha_response = $_POST['g-recaptcha-response'];
+    $recaptcha_response = $_POST['g-recaptcha'];
     if (!verify_recaptcha($recaptcha_response)) {
         wp_die('reCAPTCHA verification failed.');
     }
