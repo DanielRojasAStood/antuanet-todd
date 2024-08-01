@@ -123,7 +123,11 @@ function display_rsvp_form() {
             
             <div class="form-group-button">
             <button type="button" class="prev-step">Back</button>
-            <button type="submit">R.S.V.P</button>
+            <button type="submit" 
+                data-sitekey="6Le3kB0qAAAAAKDMx2PP0dS8gZQ8VVWz6QvSPPqE"
+                data-callback='onSubmit'
+                data-action='submit'
+            >R.S.V.P</button>
             </div>
         </div>
         <input type="hidden" name="action" value="submit_rsvp_form">
@@ -132,7 +136,26 @@ function display_rsvp_form() {
 }
 add_shortcode('rsvp_form', 'display_rsvp_form');
 
+function verify_recaptcha($response) {
+    $secret = '6Le3kB0qAAAAAKKJeTZJQ_w2XpW7P5xcgz59GOuu';
+    $remote_ip = $_SERVER['REMOTE_ADDR'];
+    $verify_url = "https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$remote_ip";
+    $response = wp_remote_get($verify_url);
+    $response_body = wp_remote_retrieve_body($response);
+    $result = json_decode($response_body);
+    return $result->success;
+}
+
 function process_rsvp_form() {
+    if (!isset($_POST['rsvp_nonce']) || !wp_verify_nonce($_POST['rsvp_nonce'], 'submit_rsvp_form')) {
+        wp_die('Security check failed.');
+    }
+
+    $recaptcha_response = $_POST['g-recaptcha-response'];
+    if (!verify_recaptcha($recaptcha_response)) {
+        wp_die('reCAPTCHA verification failed.');
+    }
+
     if (isset($_POST['nombre']) && isset($_POST['email'])) {
         $nombre = sanitize_text_field($_POST['nombre']);
         $email = sanitize_email($_POST['email']);
