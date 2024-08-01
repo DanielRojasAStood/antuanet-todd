@@ -123,44 +123,56 @@ function display_rsvp_form() {
             
             <div class="form-group-button">
                 <button type="button" class="prev-step">Back</button>
-                <button type="submit" 
-                class="g-recaptcha" 
-                data-sitekey="6LdBnB0qAAAAAKtMhT3ww1T_5mG9xLQvvJpo6Fl0"
-                data-callback='onSubmit'
-                data-action='submit'
-                >R.S.V.P</button>
+                <button type="submit">R.S.V.P</button>
             </div>
             <div class="g-recaptcha" data-sitekey="6LdBnB0qAAAAAKtMhT3ww1T_5mG9xLQvvJpo6Fl0"></div>
         </div>
         <input type="hidden" name="action" value="submit_rsvp_form">
         <?php wp_nonce_field('submit_rsvp_form', 'rsvp_nonce'); ?>
     </form>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-        function onSubmit(token) {
-            document.getElementById("rsvp-form").submit();
-        }
-    </script>
     <?php
 }
 add_shortcode('rsvp_form', 'display_rsvp_form');
 
 function verify_recaptcha($response) {
     $secret = '6LdBnB0qAAAAALlI41Lnh8mLxoZrfUd8fXWnZ9-B';
-    $remote_ip = $_SERVER['REMOTE_ADDR'];
-    $verify_url = "https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$remote_ip";
-    $response = wp_remote_get($verify_url);
-    $response_body = wp_remote_retrieve_body($response);
-    $result = json_decode($response_body);
-    return $result->success;
+    $verify_url = 'https://www.google.com/recaptcha/api/siteverify';
+    
+    $data = array(
+        'secret' => $secret,
+        'response' => $response,
+        'remoteip' => $_SERVER['REMOTE_ADDR']
+    );
+
+    $options = array(
+        'body' => $data,
+        'timeout' => 60
+    );
+
+    $response = wp_remote_post($verify_url, $options);
+
+    if (is_wp_error($response)) {
+        return false;
+    }
+
+    $body = wp_remote_retrieve_body($response);
+    $result = json_decode($body);
+
+    return isset($result->success) && $result->success === true;
 }
 
 function process_rsvp_form() {
+    error_log('POST data: ' . print_r($_POST, true));
+
     if (!isset($_POST['rsvp_nonce']) || !wp_verify_nonce($_POST['rsvp_nonce'], 'submit_rsvp_form')) {
         wp_die('Security check failed.');
     }
 
-    $recaptcha_response = $_POST['g-recaptcha'];
+    if (!isset($_POST['g-recaptcha-response'])) {
+        wp_die('Please complete the reCAPTCHA.');
+    }
+
+    $recaptcha_response = $_POST['g-recaptcha-response'];
     if (!verify_recaptcha($recaptcha_response)) {
         wp_die('reCAPTCHA verification failed.');
     }
@@ -232,6 +244,14 @@ function process_rsvp_form() {
 
         wp_redirect(home_url('/thank-you'));
         exit;
+    }
+
+    $recaptcha_response = $_POST['g-recaptcha-response'];
+    $verify_result = verify_recaptcha($recaptcha_response);
+    error_log('reCAPTCHA verification result: ' . ($verify_result ? 'success' : 'failure'));
+
+    if (!$verify_result) {
+        wp_die('reCAPTCHA verification failed.');
     }
 }
 add_action('admin_post_nopriv_submit_rsvp_form', 'process_rsvp_form');
