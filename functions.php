@@ -122,14 +122,15 @@ function display_rsvp_form() {
             <input type="email" name="email" id="email">
             
             <div class="form-group-button">
-            <button type="button" class="prev-step">Back</button>
-            <button type="submit" 
+                <button type="button" class="prev-step">Back</button>
+                <button type="submit" 
                 class="g-recaptcha" 
                 data-sitekey="6LdBnB0qAAAAAKtMhT3ww1T_5mG9xLQvvJpo6Fl0"
                 data-callback='onSubmit'
                 data-action='submit'
-            >R.S.V.P</button>
+                >R.S.V.P</button>
             </div>
+            <div class="g-recaptcha" data-sitekey="6LdBnB0qAAAAAKtMhT3ww1T_5mG9xLQvvJpo6Fl0"></div>
         </div>
         <input type="hidden" name="action" value="submit_rsvp_form">
         <?php wp_nonce_field('submit_rsvp_form', 'rsvp_nonce'); ?>

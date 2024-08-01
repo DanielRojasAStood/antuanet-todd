@@ -2504,8 +2504,6 @@ form {
 }
 
 .g-recaptcha {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 10;
+  width: 302px;
+  margin: 20px auto 0 auto;
 }

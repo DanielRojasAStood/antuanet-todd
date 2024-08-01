@@ -474,9 +474,6 @@ get_header();
         </div>
       </div>
     </section>
-
-    <div class="g-recaptcha" data-sitekey="6LdBnB0qAAAAAKtMhT3ww1T_5mG9xLQvvJpo6Fl0"></div>
-    
   </main>
 </body>
 
