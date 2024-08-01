@@ -161,6 +161,15 @@ function verify_recaptcha($response) {
     return isset($result->success) && $result->success === true;
 }
 
+function filter_form_fields($post_data) {
+    $exclude_fields = array('action', 'g-recaptcha-response', 'rsvp_nonce', '_wp_http_referer');
+    return array_diff_key($post_data, array_flip($exclude_fields));
+}
+
+$filtered_data = filter_form_fields($_POST);
+
+
+
 function process_rsvp_form() {
     error_log('POST data: ' . print_r($_POST, true));
 
@@ -218,9 +227,11 @@ function process_rsvp_form() {
         // Preparar el mensaje para el administrador
         $admin_subject = "Nuevo RSVP de $nombre";
         $admin_message = "Se ha recibido un nuevo RSVP del usuario:\n\n";
+        $exclude_fields = array('action', 'g-recaptcha-response', 'rsvp_nonce', '_wp_http_referer');
+
         
         foreach ($_POST as $key => $value) {
-            if ($key != 'action' && $key != 'g-recaptcha-response') {
+            if (!in_array($key, $exclude_fields)) {
                 $admin_message .= ucfirst(str_replace('_', ' ', $key)) . ': ' . $value . "\n";
             }
         }
