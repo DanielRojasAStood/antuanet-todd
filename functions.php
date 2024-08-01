@@ -220,7 +220,7 @@ function process_rsvp_form() {
         $admin_message = "Se ha recibido un nuevo RSVP del usuario:\n\n";
         
         foreach ($_POST as $key => $value) {
-            if ($key != 'action') {
+            if ($key != 'action' && $key != 'g-recaptcha-response') {
                 $admin_message .= ucfirst(str_replace('_', ' ', $key)) . ': ' . $value . "\n";
             }
         }
