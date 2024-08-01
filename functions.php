@@ -125,7 +125,7 @@ function display_rsvp_form() {
             <button type="button" class="prev-step">Back</button>
             <button type="submit" 
                 class="g-recaptcha" 
-                data-sitekey="6Le3kB0qAAAAAKDMx2PP0dS8gZQ8VVWz6QvSPPqE"
+                data-sitekey="6LdBnB0qAAAAAKtMhT3ww1T_5mG9xLQvvJpo6Fl0"
                 data-callback='onSubmit'
                 data-action='submit'
             >R.S.V.P</button>
@@ -145,7 +145,7 @@ function display_rsvp_form() {
 add_shortcode('rsvp_form', 'display_rsvp_form');
 
 function verify_recaptcha($response) {
-    $secret = '6Le3kB0qAAAAAKKJeTZJQ_w2XpW7P5xcgz59GOuu';
+    $secret = '6LdBnB0qAAAAALlI41Lnh8mLxoZrfUd8fXWnZ9-B';
     $remote_ip = $_SERVER['REMOTE_ADDR'];
     $verify_url = "https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$remote_ip";
     $response = wp_remote_get($verify_url);
