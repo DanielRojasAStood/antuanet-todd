@@ -168,8 +168,6 @@ function filter_form_fields($post_data) {
 
 $filtered_data = filter_form_fields($_POST);
 
-
-
 function process_rsvp_form() {
     error_log('POST data: ' . print_r($_POST, true));
 
@@ -256,18 +254,10 @@ function process_rsvp_form() {
         wp_redirect(home_url('/thank-you'));
         exit;
     }
-
-    $recaptcha_response = $_POST['g-recaptcha-response'];
-    $verify_result = verify_recaptcha($recaptcha_response);
-    error_log('reCAPTCHA verification result: ' . ($verify_result ? 'success' : 'failure'));
-
-    if (!$verify_result) {
-        wp_die('reCAPTCHA verification failed.');
-    }
+    
 }
 add_action('admin_post_nopriv_submit_rsvp_form', 'process_rsvp_form');
 add_action('admin_post_submit_rsvp_form', 'process_rsvp_form');
-
 
 
 function fetch_guest_info() {
@@ -409,7 +399,7 @@ function fetch_guest_info() {
             'Gage O\'Connell' => array('Gage O\'Connell', 'Megan O\'Connell'),
             'Sam Biddle' => array('Sam Biddle'),
             'Matt Wetherell' => array('Matt Wetherell', 'Cassie Wetherell'),
-            'Zack Metheson' => array('Zack Metheson', 'Emily Matheson'),
+            'Zack Matheson' => array('Zack Matheson', 'Emily Matheson'),
             'Justin Davis' => array('Justin Davis', 'Chelsea Davis'),
             'John Savage' => array('John Savage', 'Tatum Savage'),
             'Matt Andrews' => array('Matt Andrews', 'Meghan Andrews'),
